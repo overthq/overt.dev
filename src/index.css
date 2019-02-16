@@ -7,32 +7,17 @@
 @font-face {
   font-family: 'Muli';
   font-style: normal;
+  font-weight: bold;
   src: url('./assets/fonts/Muli-SemiBold.ttf')
 }
 
 @font-face {
   font-family: 'Muli';
+  font-weight: bold;
   font-style: italic;
   src: url('./assets/fonts/Muli-SemiBoldItalic.ttf')
 }
 
-@font-face {
-  font-family: 'Muli';
-  font-style: italic;
-  src: url('./assets/fonts/Muli-Italic.ttf')
-}
-
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  src: url('./assets/fonts/Muli-Bold.ttf')
-}
-
-@font-face {
-  font-family: 'Muli';
-  font-style: italic;
-  src: url('./assets/fonts/Muli-BoldItalic.ttf')
-}
 
 body {
   font-family: 'Open Sans';

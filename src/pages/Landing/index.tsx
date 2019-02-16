@@ -63,6 +63,7 @@ export default () => (
             fontFamily: "Muli",
             color: "#FFFFFF",
             fontSize: "48px",
+            fontWeight: "bold",
             marginBottom: "30px"
           }}
         >
