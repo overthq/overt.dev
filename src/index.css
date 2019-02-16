@@ -1,3 +1,37 @@
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli-SemiBold.ttf')
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli-SemiBoldItalic.ttf')
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli-Italic.ttf')
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli-Bold.ttf')
+}
+
+@font-face {
+  font-family: 'Muli';
+  src: url('./assets/fonts/Muli-BoldItalic.ttf')
+}
+
+body {
+  font-family: 'Open Sans';
+}
+
 body {
   margin: 0;
   padding: 0;
