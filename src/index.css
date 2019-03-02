@@ -1,26 +1,32 @@
 @font-face {
-  font-family: 'Muli';
+  font-family: 'Libre Franklin';
+  src: url('./assets/fonts/LibreFranklin-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
-  src: url('./assets/fonts/Muli-Regular.ttf');
 }
-
 @font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  src: url('./assets/fonts/Muli-SemiBold.ttf')
-}
-
-@font-face {
-  font-family: 'Muli';
+  font-family: 'Libre Franklin';
+  src: url('./assets/fonts/LibreFranklin-Italic.ttf') format('truetype');
+  font-weight: normal;
   font-style: italic;
-  src: url('./assets/fonts/Muli-SemiBoldItalic.ttf')
 }
-
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('./assets/fonts/LibreFranklin-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('./assets/fonts/LibreFranklin-BlackItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
