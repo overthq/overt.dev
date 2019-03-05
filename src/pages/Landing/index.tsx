@@ -1,164 +1,110 @@
 import React from "react";
 import styled from "styled-components";
-import hero from "./hero.svg";
-import "./Landing.css";
-import limage from "../../assets/images/Overt_Landing1.jpg";
+import styles from "./Landing.module.scss";
+import classnames from "classnames";
+import logo from "../../assets/images/overtlogo.svg";
+import { useSpring, animated } from "react-spring";
 
-const Wrapper = styled.div`
-  width: 100vw;
+const Hero = styled.main`
   height: 100vh;
-  background-color: #000000;
-  overflow-y: scroll;
-  overflow-x: hidden;
-`;
-
-const ColorHead = styled.div`
-  width: 100%;
-  height: 10px;
-  position: absolute;
-  background-color: #606060;
-`;
-
-const HeroContainer = styled.div`
-  width: 100%;
-  height: 75%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  background-image: url(${hero});
-`;
-
-const Tile = styled.div`
-  width: 100%;
-  height: 75%;
-  background-color: #d3d3d3;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const HeroColumn = styled.div`
-  margin: 30px;
-  width: 45%;
-`;
-
-const BigButton = styled.div`
-  width: 250px;
-  height: 50px;
-  border-radius: 25px;
+  width: 100vw;
   background-color: #ffffff;
-  color: #000000;
-  border: none;
-  font-family: IBM Plex Mono;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+`;
+
+const SupportingText = styled.p`
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 580px;
+  line-height: 1.6;
+`;
+
+const Button = styled.button`
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
-  }
-  &:focus {
-    outline: none;
   }
 `;
 
-const LandingImages = styled.div`
-  background-image: url(${limage});
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  filter: blur(2px);
-  transition: all 0.5s;
-  &:focus,
-  &:hover {
-    transform: scale(1.2);
-    filter: blur(0);
-  }
-  &::before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(52, 73, 94, 0.75);
-  }
-`;
+interface Link {
+  url: string;
+  label: string;
+}
 
-const LandingImageHolder = styled.div`
-  height: 100%;
-  width: 100%;
-  &:hover & > *:before,
-  &:focus & > *:before {
-    display: block;
+const links: Link[] = [
+  {
+    url: "https://github.com/overthq",
+    label: "GitHub"
+  },
+  {
+    url: "#",
+    label: "Careers"
+  },
+  {
+    url: "#",
+    label: "About Us"
   }
-  overflow: hidden;
-`;
+];
 
-const Landing = () => (
-  <Wrapper>
-    <ColorHead />
-    <HeroContainer>
-      <HeroColumn>
-        <h1
-          style={{
-            fontFamily: "Muli",
-            color: "#FFFFFF",
-            fontSize: "48px",
-            marginBottom: "30px"
-          }}
-        >
-          Build great software
-          <br />
-          in the open.
-        </h1>
-        <p
-          style={{
-            fontFamily: "Muli",
-            fontSize: "18px",
-            color: "#D3D3D3",
-            marginBottom: "30px"
-          }}
-        >
-          Making the world better, one line of open-source code at a time.
-        </p>
-        <a href="/" style={{ textDecoration: "none" }}>
-          <BigButton>Sign Up</BigButton>
+const NewLanding = () => {
+  const [active, setActive] = React.useState(false);
+  const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
+  return (
+    <Hero>
+      <div>
+        <nav>
+          <span
+            className={styles.navbarToggle}
+            onClick={() => setActive(!active)}
+          />
+          <a href="/" className={styles.logo}>
+            <img src={logo} alt="" style={{ zoom: 0.07 }} />
+          </a>
+          <ul
+            className={classnames(styles.mainNav, {
+              [styles.active]: active
+            })}
+            id="js-menu"
+          >
+            {links.map((link: Link, index: number) => (
+              <li key={index}>
+                <a href={link.url} className={styles.navLinks}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <animated.div
+        className={styles.hero}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          ...springProps
+        }}
+      >
+        <h1 style={{ fontSize: 40 }}>The future is open-source.</h1>
+        <br />
+        <SupportingText>
+          Overt creates open-source solutions to the world's pressing issues.
+        </SupportingText>
+        <br />
+        <br />
+        <a href="/" style={{ textDecoration: "none", width: "200px" }}>
+          <Button>Learn More</Button>
         </a>
-      </HeroColumn>
-      <HeroColumn />
-    </HeroContainer>
-    <Tile>
-      <LandingImageHolder>
-        <LandingImages>
-          <h1 style={{ color: "#FFFFFF" }}>Code is the way forward</h1>
-        </LandingImages>
-      </LandingImageHolder>
-    </Tile>
-    <Tile>
-      <LandingImageHolder>
-        <LandingImages>
-          <h1 style={{ color: "#FFFFFF" }}>Code is the way forward</h1>
-        </LandingImages>
-      </LandingImageHolder>
-    </Tile>
-    <Tile>
-      <LandingImageHolder>
-        <LandingImages>
-          <h1 style={{ color: "#FFFFFF" }}>Code is the way forward</h1>
-        </LandingImages>
-      </LandingImageHolder>
-    </Tile>
-  </Wrapper>
-);
+      </animated.div>
+      <div />
+    </Hero>
+  );
+};
 
-export default Landing;
+export default NewLanding;
