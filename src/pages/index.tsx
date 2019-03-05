@@ -1,11 +1,11 @@
-// import React from 'react';
-// import { Router } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Landing from "./Landing";
 
-// const AppRouter = () => (
-// 	<Router history=''></Router>
-// );
+const AppRouter = () => (
+  <Router>
+    <Route path="/" exact component={Landing} />
+  </Router>
+);
 
-//
-//export default AppRouter;
-//
-export default '';
+export default AppRouter;

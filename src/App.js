@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Landing from "./pages/NewLanding";
+import AppRouter from "./pages";
 
 const App = () => {
-  return <Landing />;
+  return <AppRouter />;
 };
 
 export default App;
