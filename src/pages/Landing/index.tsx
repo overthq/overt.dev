@@ -29,6 +29,7 @@ const Button = styled.button`
   font-weight: bold;
   &:hover {
     cursor: pointer;
+    opacity: 0.9;
   }
 `;
 
