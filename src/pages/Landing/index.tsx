@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 import styles from "./Landing.module.scss";
 import classnames from "classnames";
 import logo from "../../assets/images/overtlogo.svg";
@@ -29,15 +30,16 @@ const Button = styled.button`
   font-weight: bold;
   &:hover {
     cursor: pointer;
+    opacity: 0.9;
   }
 `;
 
-interface Link {
+interface LinkType {
   url: string;
   label: string;
 }
 
-const links: Link[] = [
+const links: LinkType[] = [
   {
     url: "https://github.com/overthq",
     label: "GitHub"
@@ -47,7 +49,7 @@ const links: Link[] = [
     label: "Careers"
   },
   {
-    url: "#",
+    url: "/about-us",
     label: "About Us"
   }
 ];
@@ -72,11 +74,11 @@ const NewLanding = () => {
             })}
             id="js-menu"
           >
-            {links.map((link: Link, index: number) => (
+            {links.map((link: LinkType, index: number) => (
               <li key={index}>
-                <a href={link.url} className={styles.navLinks}>
+                <Link to={link.url} className={styles.navLinks}>
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
