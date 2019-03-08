@@ -100,9 +100,9 @@ const NewLanding = () => {
         </SupportingText>
         <br />
         <br />
-        <a href="/" style={{ textDecoration: "none", width: "200px" }}>
+        <Link to="/about-us" style={{ textDecoration: "none", width: "200px" }}>
           <Button>Learn More</Button>
-        </a>
+        </Link>
       </animated.div>
       <div />
     </Hero>

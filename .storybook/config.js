@@ -7,9 +7,8 @@ setDefaults({
   header: false,
   styles: { infoBody: { backgroundColor: "#F8F8F8" } }
 });
-addDecorator((story, context) =>
-  withInfo("Component Documentation")(story)(context)
-);
+
+addDecorator(withInfo);
 addDecorator(withKnobs);
 const req = require.context("../src/stories", true, /\.js$/);
 
