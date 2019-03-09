@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import styles from './Landing.module.scss';
+import cls from './Landing.module.scss';
 import classnames from 'classnames';
 import logo from '../../assets/images/overtlogo.svg';
 import { useSpring, animated } from 'react-spring';
@@ -12,7 +12,7 @@ const Section = styled.main`
 `;
 
 const Hero = styled.div`
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	display: grid;
 	grid-template-rows: 1fr 2fr 1fr;
@@ -63,26 +63,26 @@ const NewLanding = () => {
 	const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
 	return (
 		<>
-			<Section backgroundColor="#FFFFFF">
+			<Section backgroundColor='#FFFFFF'>
 				<Hero>
 					<div>
 						<nav>
 							<span
-								className={styles.navbarToggle}
+								className={cls.navbarToggle}
 								onClick={() => setActive(!active)}
 							/>
-							<a href="/" className={styles.logo}>
-								<img src={logo} alt="" style={{ zoom: 0.07 }} />
+							<a href='/' className={cls.logo}>
+								<img src={logo} alt='' style={{ zoom: 0.07 }} />
 							</a>
 							<ul
-								className={classnames(styles.mainNav, {
-									[styles.active]: active
+								className={classnames(cls.mainNav, {
+									[cls.active]: active
 								})}
-								id="js-menu"
+								id='js-menu'
 							>
 								{links.map((link: LinkType, index: number) => (
 									<li key={index}>
-										<a href={link.url} className={styles.navLinks}>
+										<a href={link.url} className={cls.navLinks}>
 											{link.label}
 										</a>
 									</li>
@@ -91,13 +91,8 @@ const NewLanding = () => {
 						</nav>
 					</div>
 					<animated.div
-						className={styles.hero}
-						style={{
-							display: 'flex',
-							flexDirection: 'column',
-							justifyContent: 'center',
-							...springProps
-						}}
+						className={cls.hero}
+						style={styles.heroMain(springProps)}
 					>
 						<h1 style={{ fontSize: 40 }}>The future is open-source.</h1>
 						<br />
@@ -108,7 +103,7 @@ const NewLanding = () => {
 						<br />
 						<br />
 						<a
-							href="#about-us"
+							href='#about-us'
 							style={{ textDecoration: 'none', width: '200px' }}
 						>
 							<Button>Learn More</Button>
@@ -117,54 +112,54 @@ const NewLanding = () => {
 					<div />
 				</Hero>
 			</Section>
-			<Section backgroundColor="#000000" id="about-us">
-				<div
-					style={{
-						flexDirection: 'column',
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'space-around',
-						height: '100%',
-						width: '100%',
-						padding: '40px 0 40px 0',
-						minHeight: '60vh'
-					}}
-				>
-					<div style={{}}>
+			<Section backgroundColor='#000000' id='about-us'>
+				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
+					<div>
 						<h1 style={{ color: '#FFFFFF', fontSize: 40, textAlign: 'center' }}>
 							We are building the future.
 						</h1>
 					</div>
 					<br />
 					<div style={{ width: '75%', margin: 'auto' }}>
-						<p
-							style={{
-								fontSize: 20,
-								color: '#FFFFFF',
-								lineHeight: 1.5
-							}}
-						>
+						<p style={styles.sectionParagraph}>
 							Open-source software powers a large amount of the world's
 							technology. From operating systems to self-driving car software,
 							open-source code makes technology accessible to everyone.
 						</p>
 						<br />
-						<p
-							style={{
-								fontSize: 20,
-								color: '#FFFFFF',
-								lineHeight: 1.5
-							}}
-						>
-							Open-source software powers a large amount of the world's
-							technology. From operating systems to self-driving car software,
-							open-source code makes technology accessible to everyone.
+						<p style={styles.sectionParagraph}>
+							At Overt, we are building open-source software to solve problems
+							we face everyday. We are building software for the the people, by
+							the people.
 						</p>
 					</div>
 				</div>
 			</Section>
 		</>
 	);
+};
+
+const styles = {
+	sectionParagraph: {
+		fontSize: 20,
+		color: '#FFFFFF',
+		lineHeight: 1.5
+	},
+	aboutUs: {
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'space-around',
+		height: '100%',
+		width: '100%',
+		padding: '40px 0 40px 0',
+		minHeight: '60vh'
+	},
+	heroMain: (springProps: any) => ({
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		...springProps
+	})
 };
 
 export default NewLanding;
