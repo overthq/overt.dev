@@ -1,64 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
-import cls from './Landing.module.scss';
-import classnames from 'classnames';
-import logo from '../../assets/images/overtlogo.svg';
 import { useSpring, animated } from 'react-spring';
+import classnames from 'classnames';
 
-const Section = styled.main`
-	background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
-		backgroundColor};
-	min-height: 60vh;
-`;
+import { Button, Hero, Section, SupportingText } from './components';
+import links from './links';
+import cls from './Landing.module.scss';
+import logo from '../../assets/images/overtlogo.svg';
 
-const Hero = styled.div`
-	min-height: 100vh;
-	width: 100vw;
-	display: grid;
-	grid-template-rows: 1fr 2fr 1fr;
-`;
-
-const SupportingText = styled.p`
-	font-size: 18px;
-	max-width: 580px;
-	line-height: 1.6;
-`;
-
-const Button = styled.button`
-	height: 60px;
-	width: 200px;
-	border-radius: 5px;
-	background-color: #000000;
-	color: #ffffff;
-	font-size: 20px;
-	font-weight: bold;
-	&:hover {
-		cursor: pointer;
-		opacity: 0.9;
-	}
-`;
-
-interface LinkType {
-	url: string;
-	label: string;
-}
-
-const links: LinkType[] = [
-	{
-		url: 'https://github.com/overthq',
-		label: 'GitHub'
-	},
-	{
-		url: '/projects',
-		label: 'Projects'
-	},
-	{
-		url: '#about-us',
-		label: 'About Us'
-	}
-];
-
-const NewLanding = () => {
+const Landing = () => {
 	const [active, setActive] = React.useState(false);
 	const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
 	return (
@@ -80,7 +29,7 @@ const NewLanding = () => {
 								})}
 								id='js-menu'
 							>
-								{links.map((link: LinkType, index: number) => (
+								{links.map((link, index: number) => (
 									<li key={index}>
 										<a href={link.url} className={cls.navLinks}>
 											{link.label}
@@ -172,4 +121,4 @@ const styles = {
 	})
 };
 
-export default NewLanding;
+export default Landing;
