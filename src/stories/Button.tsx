@@ -1,5 +1,5 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { Button } from '../components';
 
-const Button = () => <button />;
-
-export default Button;
+storiesOf('Button', module).add('default', () => <Button />);
