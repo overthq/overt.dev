@@ -24,4 +24,4 @@
 //     Firebase.storage = firebase.storage();
 //   }
 // }
-export default "hjhsf";
+export default 'hjhsf';
