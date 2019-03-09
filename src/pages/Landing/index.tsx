@@ -94,7 +94,9 @@ const NewLanding = () => {
 						className={cls.hero}
 						style={styles.heroMain(springProps)}
 					>
-						<h1 style={{ fontSize: 40, fontWeight: 'bold' }}>The future is open-source.</h1>
+						<h1 style={{ fontSize: 40, fontWeight: 900 }}>
+							The future is open-source.
+						</h1>
 						<br />
 						<SupportingText>
 							Overt creates open-source solutions to the world's pressing
@@ -115,7 +117,14 @@ const NewLanding = () => {
 			<Section backgroundColor='#000000' id='about-us'>
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
-						<h1 style={{ fontWeight: 'bold', color: '#FFFFFF', fontSize: 40, textAlign: 'center' }}>
+						<h1
+							style={{
+								fontWeight: 900,
+								color: '#FFFFFF',
+								fontSize: 40,
+								textAlign: 'center'
+							}}
+						>
 							We are building the future.
 						</h1>
 					</div>
