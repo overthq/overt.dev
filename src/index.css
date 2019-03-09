@@ -1,28 +1,3 @@
-@font-face {
-  font-family: 'Libre Franklin';
-  src: url('./assets/fonts/LibreFranklin-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Libre Franklin';
-  src: url('./assets/fonts/LibreFranklin-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Libre Franklin';
-  src: url('./assets/fonts/LibreFranklin-Black.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Libre Franklin';
-  src: url('./assets/fonts/LibreFranklin-BlackItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
 body {
   margin: 0;
   padding: 0;
