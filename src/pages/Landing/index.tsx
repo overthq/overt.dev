@@ -2,7 +2,8 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import classnames from 'classnames';
 
-import { Button, Hero, Section, SupportingText } from './components';
+import { Button, Hero, Section, SupportingText } from './elements';
+import { Project } from './components';
 import links from './links';
 import cls from './Landing.module.scss';
 import logo from '../../assets/images/overtlogo.svg';
@@ -66,14 +67,7 @@ const Landing = () => {
 			<Section backgroundColor='#000000' id='about-us'>
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
-						<h1
-							style={{
-								fontWeight: 900,
-								color: '#FFFFFF',
-								fontSize: 40,
-								textAlign: 'center'
-							}}
-						>
+						<h1 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
 							We are building the future.
 						</h1>
 					</div>
@@ -92,6 +86,17 @@ const Landing = () => {
 							building software for the the people, by the people.
 						</p>
 					</div>
+				</div>
+			</Section>
+			<Section backgroundColor='#505050' id='projects'>
+				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
+					<div>
+						<h1 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
+							Our Projects
+						</h1>
+					</div>
+					<br />
+					<div />
 				</div>
 			</Section>
 		</>
@@ -118,7 +123,12 @@ const styles = {
 		flexDirection: 'column',
 		justifyContent: 'center',
 		...springProps
-	})
+	}),
+	sectionHeader: {
+		fontWeight: 900,
+		color: '#FFFFFF',
+		fontSize: 40
+	}
 };
 
 export default Landing;

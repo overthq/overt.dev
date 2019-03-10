@@ -9,7 +9,7 @@ const links: LinkType[] = [
 		label: 'GitHub'
 	},
 	{
-		url: '/projects',
+		url: '#projects',
 		label: 'Projects'
 	},
 	{
