@@ -10,6 +10,15 @@ const Wrapper = styled.div`
 	background-repeat: no-repeat;
 	background-position: center;
 	transition: opacity 0.5s ease-in-out;
+	@media (max-width: 768px) {
+		background-size: 380px auto;
+	}
+	@media (max-width: 480px) {
+		background-size: 300px auto;
+	}
+	@media (max-width: 375px) {
+		background-size: 250px auto;
+	}
 	&:hover {
 		opacity: 0.8;
 	}
