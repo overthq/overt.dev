@@ -9,12 +9,12 @@ const links: LinkType[] = [
 		label: 'GitHub'
 	},
 	{
-		url: '#projects',
-		label: 'Projects'
-	},
-	{
 		url: '#about-us',
 		label: 'About Us'
+	},
+	{
+		url: '#projects',
+		label: 'Projects'
 	}
 ];
 
