@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 		background-size: 300px auto;
 	}
 	@media (max-width: 375px) {
-		background-size: 250px auto;
+		background-size: 230px auto;
 	}
 	&:hover {
 		opacity: 0.8;
