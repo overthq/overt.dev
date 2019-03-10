@@ -2,9 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-	width: ;
+	width: 250px;
+	height: 250px;
+	border-radius: 4px;
+	background-color: #ffffff;
 `;
 
-const Project = () => <div />;
+interface IProjectProps {
+	link: string;
+}
+
+const Project = (props: IProjectProps) => (
+	<a href={props.link}>
+		<Wrapper />
+	</a>
+);
 
 export default Project;

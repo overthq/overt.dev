@@ -96,7 +96,9 @@ const Landing = () => {
 						</h1>
 					</div>
 					<br />
-					<div />
+					<div style={{ width: '75%', margin: 'auto' }}>
+						<Project link='https://github.com/overt/Auxilium' />
+					</div>
 				</div>
 			</Section>
 		</>
