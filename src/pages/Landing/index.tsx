@@ -7,6 +7,7 @@ import { Project } from './components';
 import links from './links';
 import cls from './Landing.module.scss';
 import logo from '../../assets/images/overtlogo.svg';
+import auxiliumLogo from '../../assets/images/auxiliumlogo.png';
 
 const Landing = () => {
 	const [active, setActive] = React.useState(false);
@@ -97,7 +98,10 @@ const Landing = () => {
 					</div>
 					<br />
 					<div style={{ width: '75%', margin: 'auto' }}>
-						<Project link='https://github.com/overt/Auxilium' />
+						<Project
+							logo={auxiliumLogo}
+							link='https://github.com/overthq/Auxilium'
+						/>
 					</div>
 				</div>
 			</Section>
