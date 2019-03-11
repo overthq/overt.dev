@@ -1,6 +1,6 @@
-import React from "react";
-import "./App.css";
-import AppRouter from "./pages";
+import React from 'react';
+import './App.css';
+import AppRouter from './pages';
 
 const App = () => <AppRouter />;
 
