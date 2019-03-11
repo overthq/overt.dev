@@ -1,8 +1,9 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import classnames from 'classnames';
+import { IoLogoGithub, IoLogoTwitter } from 'react-icons/io';
 
-import { Button, Hero, Section, SupportingText } from './elements';
+import { Button, Hero, Section, SupportingText, Footer } from './elements';
 import { Project } from './components';
 import links from './links';
 import cls from './Landing.module.scss';
@@ -105,6 +106,27 @@ const Landing = () => {
 					</div>
 				</div>
 			</Section>
+			<Footer>
+				<div>
+					<img src={logo} alt='' style={{ zoom: 0.07, filter: 'invert(1)' }} />
+				</div>
+				<div
+					style={{
+						display: 'flex',
+						flexDirection: 'row',
+						alignItems: 'center',
+						justifyContent: 'space-between',
+						width: '80px'
+					}}
+				>
+					<a href='https://github.com/overthq' className={cls.socialIcon}>
+						<IoLogoGithub size={30} />
+					</a>
+					<a href='https://twitter.com/overt_hq' className={cls.socialIcon}>
+						<IoLogoTwitter size={30} />
+					</a>
+				</div>
+			</Footer>
 		</>
 	);
 };

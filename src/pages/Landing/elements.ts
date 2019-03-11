@@ -32,3 +32,14 @@ export const Button = styled.button`
 		opacity: 0.9;
 	}
 `;
+
+export const Footer = styled.div`
+	height: 50px;
+	background-color: #000000;
+	width: 100vw;
+	padding: 10px 20px 10px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+`;

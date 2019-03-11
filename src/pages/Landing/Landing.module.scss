@@ -106,3 +106,14 @@ canvas {
     width: 100%;
   }
 }
+
+.socialIcon {
+  color: #FFFFFF;
+  transition: color 0.5s ease-in-out;
+  &:visited {
+    color: #FFFFFF;
+  }
+  &:hover {
+    color: #D3D3D3;
+  }
+}
