@@ -7,6 +7,7 @@ import { Button, Hero, Section, SupportingText, Footer } from './elements';
 import { Project } from './components';
 import links from './links';
 import cls from './Landing.module.scss';
+import styles from './styles';
 import logo from '../../assets/images/overtlogo.svg';
 import auxiliumLogo from '../../assets/images/auxiliumlogo.png';
 
@@ -63,7 +64,7 @@ const Landing = () => {
 							<Button>Learn More</Button>
 						</a>
 					</animated.div>
-					<div />
+					{/* <div /> */}
 				</Hero>
 			</Section>
 			<Section backgroundColor='#000000' id='about-us'>
@@ -129,34 +130,6 @@ const Landing = () => {
 			</Footer>
 		</>
 	);
-};
-
-const styles = {
-	sectionParagraph: {
-		fontSize: 20,
-		color: '#FFFFFF',
-		lineHeight: 1.5
-	},
-	aboutUs: {
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'space-around',
-		height: '100%',
-		width: '100%',
-		padding: '40px 0 40px 0',
-		minHeight: '60vh'
-	},
-	heroMain: (springProps: any) => ({
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'center',
-		...springProps
-	}),
-	sectionHeader: {
-		fontWeight: 900,
-		color: '#FFFFFF',
-		fontSize: 40
-	}
 };
 
 export default Landing;

@@ -10,7 +10,7 @@ export const Hero = styled.div`
 	min-height: 100vh;
 	width: 100vw;
 	display: grid;
-	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 4fr 1fr;
 `;
 
 export const SupportingText = styled.p`
