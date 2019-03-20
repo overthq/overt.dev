@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import AppRouter from './pages';
+import { Landing } from './pages';
 
-const App = () => <AppRouter />;
+const App = () => <Landing />;
 
 export default App;
