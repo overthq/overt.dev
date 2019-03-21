@@ -1,7 +1,7 @@
 import heroImage from '../../assets/heroimage.svg';
 
 const styles = {
-	sectionParagraph: {
+  sectionParagraph: {
 		fontSize: 20,
 		color: '#FFFFFF',
 		lineHeight: 1.5

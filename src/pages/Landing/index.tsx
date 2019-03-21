@@ -91,10 +91,10 @@ const Landing = () => {
 					</div>
 				</div>
 			</Section>
-			<Section backgroundColor='#505050' id='projects'>
+			<Section backgroundColor='#FFFFFF' id='projects'>
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
-						<h1 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
+						<h1 style={{ ...styles.sectionHeader, ...{ color: '#000000', textAlign: 'center' } }}>
 							Our Projects
 						</h1>
 					</div>
