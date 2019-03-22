@@ -27,7 +27,7 @@ const styles = {
 		...springProps
 	}),
 	sectionHeader: {
-		fontWeight: 900,
+		fontWeight: 700,
 		color: '#FFFFFF',
 		fontSize: 40
 	}

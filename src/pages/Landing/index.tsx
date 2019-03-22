@@ -47,7 +47,7 @@ const Landing = () => {
 						className={cls.hero}
 						style={styles.heroMain(springProps)}
 					>
-						<h1 style={{ fontSize: 40, fontWeight: 900 }}>
+						<h1 style={{ fontSize: 40, fontWeight: 700 }}>
 							The future is open-source.
 						</h1>
 						<br />
@@ -70,9 +70,9 @@ const Landing = () => {
 			<Section backgroundColor='#000000' id='about-us'>
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
-						<h1 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
+						<h2 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
 							We are building the future.
-						</h1>
+						</h2>
 					</div>
 					<br />
 					<div style={{ width: '75%', margin: 'auto' }}>
