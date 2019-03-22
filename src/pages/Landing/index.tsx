@@ -113,7 +113,7 @@ const Landing = () => {
 				</div>
 				<div>
 					<a href="https://www.producthunt.com/posts/overt-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-overt-2" target="_blank">
-						<img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=149087&theme=dark" alt="Overt - Building the future in the open | Product Hunt Embed" style={{ width: '250px', height: '54px' }} width="250px" height="54px" />
+						<img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=149087&theme=light" alt="Overt - Building the future in the open | Product Hunt Embed" style={{ width: '250px', height: '54px' }} width="250px" height="54px" />
 					</a>
 				</div>
 				<div
