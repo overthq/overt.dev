@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Section = styled.main`
+export const Section = styled.div`
 	background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
 		backgroundColor};
 	min-height: 60vh;
