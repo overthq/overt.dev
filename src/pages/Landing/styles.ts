@@ -20,7 +20,6 @@ const styles = {
 		flexDirection: 'column',
 		justifyContent: 'center',
 		backgroundImage: `url(${heroImage})`,
-		backgroundAttachment: 'fixed',
 		backgroundRepeat: 'no-repeat',
 		backgroundPosition: 'right center',
 		backgroundSize: '600px auto',
