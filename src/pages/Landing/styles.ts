@@ -1,10 +1,10 @@
-import heroImage from '../../assets/heroimage.svg';
 
 const styles = {
   sectionParagraph: {
 		fontSize: 20,
 		color: '#FFFFFF',
-		lineHeight: 1.5
+		lineHeight: 1.5,
+		marginBottom: '1.5rem'
 	},
 	aboutUs: {
 		display: 'flex',
@@ -15,16 +15,12 @@ const styles = {
 		padding: '40px 0 40px 0',
 		minHeight: '60vh'
 	},
-	heroMain: (springProps: any) => ({
+	heroMain: {
 		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'center',
-		backgroundImage: `url(${heroImage})`,
-		backgroundRepeat: 'no-repeat',
-		backgroundPosition: 'right center',
-		backgroundSize: '600px auto',
-		...springProps
-	}),
+		width: '100%',
+		justifyContent: 'space-between',
+		alignItems: 'center'
+	},
 	sectionHeader: {
 		fontWeight: 700,
 		color: '#FFFFFF',

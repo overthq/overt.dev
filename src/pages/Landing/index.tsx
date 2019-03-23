@@ -10,6 +10,7 @@ import cls from './Landing.module.scss';
 import styles from './styles';
 import logo from '../../assets/images/overtlogo.svg';
 import auxiliumLogo from '../../assets/images/auxiliumlogo.png';
+import heroImage from '../../assets/heroimage.svg';
 
 const Landing = () => {
 	const [active, setActive] = React.useState(false);
@@ -47,8 +48,9 @@ const Landing = () => {
 					</div>
 					<animated.div
 						className={cls.hero}
-						style={styles.heroMain(springProps)}
+						style={{ ...styles.heroMain, ...springProps }}
 					>
+						<div>
 						<h1 style={{ fontSize: 40, fontWeight: 700 }}>
 							The future is open-source.
 						</h1>
@@ -63,6 +65,14 @@ const Landing = () => {
 						>
 							<Button role='button'>Learn More</Button>
 						</a>
+						</div>
+						<div className={cls.imageHolder}>
+							<img
+								src={heroImage}
+								alt='Building the future'
+								style={{ width: '100%', height: '100%' }}
+							/>
+						</div>
 					</animated.div>
 				</Hero>
 			</Section>
@@ -80,7 +90,6 @@ const Landing = () => {
 							technology. From operating systems to self-driving car software,
 							open-source code makes technology accessible to everyone.
 						</p>
-						<br />
 						<p style={styles.sectionParagraph}>
 							At Overt, we are building open-source software to solve problems
 							we face everyday. We believe in the collaboration of developers
@@ -117,9 +126,8 @@ const Landing = () => {
 					<div style={{ width: '75%', margin: 'auto' }}>
 						<p style={styles.sectionParagraph}>
 							To build the future, we need your help. By making all our source code open-source,
-							we urge to be amongst those who will join us in building the future.
+							we urge you to be amongst those who will join us in building the future.
 						</p>
-						<br />
 						<p style={styles.sectionParagraph}>
 							To re-assure you of our intentions, all our code is MIT-Licensed.
 							We also promise to not sell your intellectual property, or become closed-source at any point.

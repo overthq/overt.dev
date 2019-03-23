@@ -65,6 +65,10 @@ canvas {
   width: 100vw;
 }
 
+.imageHolder {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     display: flex;
@@ -99,6 +103,15 @@ canvas {
 
   .hero {
     padding-left: 52px;
+    padding-right: 52px;
+  }
+
+  .imageHolder {
+    width: 50%;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center 
   }
 }
 
