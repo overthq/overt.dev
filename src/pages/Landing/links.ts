@@ -15,6 +15,10 @@ const links: LinkType[] = [
 	{
 		url: '#projects',
 		label: 'Projects'
+	},
+	{
+		url: '#join-us',
+		label: 'Join Us'
 	}
 ];
 

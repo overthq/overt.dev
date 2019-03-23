@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import classnames from 'classnames';
-import { IoLogoGithub, IoLogoTwitter } from 'react-icons/io';
+import { IoLogoGithub, IoLogoTwitter, IoIosMenu } from 'react-icons/io';
 
 import { Button, Hero, Section, SupportingText, Footer } from './elements';
 import { Project } from './components';
@@ -23,7 +23,9 @@ const Landing = () => {
 							<span
 								className={cls.navbarToggle}
 								onClick={() => setActive(!active)}
-							/>
+							>
+								<IoIosMenu color='#000000' size={30} />
+							</span>
 							<a href='/' className={cls.logo}>
 								<img src={logo} alt='' style={{ zoom: 0.07 }} />
 							</a>
@@ -101,6 +103,27 @@ const Landing = () => {
 							logo={auxiliumLogo}
 							link='https://github.com/overthq/Auxilium'
 						/>
+					</div>
+				</div>
+			</Section>
+			<Section backgroundColor='#000000' id='join-us'>
+				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
+					<div>
+						<h2 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
+							Join Us
+						</h2>
+					</div>
+					<br />
+					<div style={{ width: '75%', margin: 'auto' }}>
+						<p style={styles.sectionParagraph}>
+							To build the future, we need your help. By making all our source code open-source,
+							we urge to be amongst those who will join us in building the future.
+						</p>
+						<br />
+						<p style={styles.sectionParagraph}>
+							To re-assure you of our intentions, all our code is MIT-Licensed.
+							We also promise to not sell your intellectual property, or become closed-source at any point.
+						</p>
 					</div>
 				</div>
 			</Section>
