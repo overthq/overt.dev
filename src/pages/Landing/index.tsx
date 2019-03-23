@@ -52,19 +52,16 @@ const Landing = () => {
 						</h1>
 						<br />
 						<SupportingText>
-							Overt creates open-source solutions to the world's pressing
+							We create open-source solutions to the world's pressing
 							issues.
 						</SupportingText>
-						<br />
-						<br />
 						<a
 							href='#about-us'
 							style={{ textDecoration: 'none', width: '200px' }}
 						>
-							<Button>Learn More</Button>
+							<Button role='button'>Learn More</Button>
 						</a>
 					</animated.div>
-					{/* <div /> */}
 				</Hero>
 			</Section>
 			<Section backgroundColor='#000000' id='about-us'>

@@ -10,11 +10,13 @@ nav {
 	display: none;
 }
 
-.navLinks,
-.logo {
-	text-decoration: none;
+.navLinks {
+  text-decoration: none;
   color: #505050;
-  font-weight: 500;
+  font: {
+    size: 18px;
+    weight: 500;
+  }
 }
 
 

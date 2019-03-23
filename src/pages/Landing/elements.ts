@@ -14,18 +14,20 @@ export const Hero = styled.div`
 `;
 
 export const SupportingText = styled.p`
-	font-size: 18px;
-	max-width: 580px;
+	font-size: 20px;
+	max-width: 600px;
 	line-height: 1.6;
+	margin-bottom: 4rem;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
 	height: 60px;
 	width: 200px;
-	border-radius: 5px;
+	border-radius: 4px;
 	background-color: #000000;
 	color: #ffffff;
 	font-size: 20px;
+	padding: 1rem 2rem;
 	font-weight: bold;
 	&:hover {
 		cursor: pointer;
