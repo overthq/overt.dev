@@ -132,6 +132,18 @@ const Landing = () => {
 							To re-assure you of our intentions, all our code is MIT-Licensed.
 							We also promise to not sell your intellectual property, or become closed-source at any point.
 						</p>
+						<div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 50 }}>
+							<div>
+								<Button
+									style={{ backgroundColor: '#FFFFFF', color: '#000000' }}
+									href='https://github.com/overthq'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Join Us on GitHub
+								</Button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</Section>
