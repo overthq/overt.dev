@@ -51,20 +51,15 @@ const Landing = () => {
 						style={{ ...styles.heroMain, ...springProps }}
 					>
 						<div>
-						<h1 style={{ fontSize: 40, fontWeight: 700 }}>
-							The future is open-source.
-						</h1>
-						<br />
-						<SupportingText>
-							We create open-source solutions to the world's pressing
-							issues.
-						</SupportingText>
-						<a
-							href='#about-us'
-							style={{ textDecoration: 'none', width: '200px' }}
-						>
-							<Button role='button'>Learn More</Button>
-						</a>
+							<h1 style={{ fontSize: 40, fontWeight: 700 }}>
+								The future is open-source.
+							</h1>
+							<br />
+							<SupportingText>
+								We create open-source solutions to the world's pressing
+								issues.
+							</SupportingText>
+							<Button href='#about-us' role='button'>Learn More</Button>
 						</div>
 						<div className={cls.imageHolder}>
 							<img
