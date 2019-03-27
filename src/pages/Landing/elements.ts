@@ -37,13 +37,34 @@ export const Button = styled.a`
 `;
 
 export const Footer = styled.div`
-	height: 100px;
+	min-height: 100px;
 	background-color: #000000;
 	width: 100vw;
-	padding: 10px 20px 10px 20px;
+	padding: 10px 20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	flex-wrap: wrap;
 	justify-content: space-between;
+	& > * {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 33.33%;
+	}
+	& > *:last-child {
+		justify-content: space-around;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	@media screen and (max-width: 650px) {
+		flex-direction: column;
+		& > * {
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		& > *:last-child {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+	}
 `;

@@ -56,10 +56,11 @@ const Landing = () => {
 							</h1>
 							<br />
 							<SupportingText>
-								We create open-source solutions to the world's pressing
-								issues.
+								We create open-source solutions to the world's pressing issues.
 							</SupportingText>
-							<Button href='#about-us' role='button'>Learn More</Button>
+							<Button href='#about-us' role='button'>
+								Learn More
+							</Button>
 						</div>
 						<div className={cls.imageHolder}>
 							<img
@@ -97,7 +98,12 @@ const Landing = () => {
 			<Section backgroundColor='#FFFFFF' id='projects'>
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
-						<h1 style={{ ...styles.sectionHeader, ...{ color: '#000000', textAlign: 'center' } }}>
+						<h1
+							style={{
+								...styles.sectionHeader,
+								...{ color: '#000000', textAlign: 'center' }
+							}}
+						>
 							Our Projects
 						</h1>
 					</div>
@@ -120,14 +126,23 @@ const Landing = () => {
 					<br />
 					<div style={{ width: '75%', margin: 'auto' }}>
 						<p style={styles.sectionParagraph}>
-							To build the future, we need your help. By making all our source code open-source,
-							we urge you to be amongst those who will join us in building the future.
+							To build the future, we need your help. By making all our source
+							code open-source, we urge you to be amongst those who will join us
+							in building the future.
 						</p>
 						<p style={styles.sectionParagraph}>
 							To re-assure you of our intentions, all our code is MIT-Licensed.
-							We also promise to not sell your intellectual property, or become closed-source at any point.
+							We also promise to not sell your intellectual property, or become
+							closed-source at any point.
 						</p>
-						<div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 50 }}>
+						<div
+							style={{
+								display: 'flex',
+								justifyContent: 'center',
+								width: '100%',
+								marginTop: 50
+							}}
+						>
 							<div>
 								<Button
 									style={{ backgroundColor: '#FFFFFF', color: '#000000' }}
@@ -147,8 +162,18 @@ const Landing = () => {
 					<img src={logo} alt='' style={{ zoom: 0.07, filter: 'invert(1)' }} />
 				</div>
 				<div>
-					<a href="https://www.producthunt.com/posts/overt-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-overt-2" target="_blank">
-						<img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=149087&theme=light" alt="Overt - Building the future in the open | Product Hunt Embed" style={{ width: '250px', height: '54px' }} width="250px" height="54px" />
+					<a
+						href='https://www.producthunt.com/posts/overt-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-overt-2'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<img
+							src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=149087&theme=light'
+							alt='Overt - Building the future in the open | Product Hunt Embed'
+							style={{ width: '250px', height: '54px' }}
+							width='250px'
+							height='54px'
+						/>
 					</a>
 				</div>
 				<div
@@ -156,8 +181,7 @@ const Landing = () => {
 						display: 'flex',
 						flexDirection: 'row',
 						alignItems: 'center',
-						justifyContent: 'space-between',
-						width: '80px'
+						justifyContent: 'space-between'
 					}}
 				>
 					<a href='https://github.com/overthq' className={cls.socialIcon}>
