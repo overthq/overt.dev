@@ -1,6 +1,7 @@
 # Overt Website
 
-![Overt](./src/assets/images/overtlogo.svg)
+<p align="center">![Overt](./src/assets/images/overtlogo.svg)</p>
+
 
 This repository contains the source code for Overt's website.
 
