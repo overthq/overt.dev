@@ -9,7 +9,7 @@ import links from './links';
 import cls from './Landing.module.scss';
 import styles from './styles';
 import logo from '../../assets/images/overtlogo.svg';
-import auxiliumLogo from '../../assets/images/auxiliumlogo.png';
+import auxiliumNewLogo from '../../assets/images/auxiliumNewLogo.png';
 import heroImage from '../../assets/heroimage.svg';
 
 const Landing = () => {
@@ -17,7 +17,7 @@ const Landing = () => {
 	const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
 	return (
 		<>
-			<Section backgroundColor='#FFFFFF'>
+			<Section backgroundColor="#FFFFFF">
 				<Hero>
 					<div>
 						<nav>
@@ -25,16 +25,16 @@ const Landing = () => {
 								className={cls.navbarToggle}
 								onClick={() => setActive(!active)}
 							>
-								<IoIosMenu color='#000000' size={30} />
+								<IoIosMenu color="#000000" size={30} />
 							</span>
-							<a href='/' className={cls.logo}>
-								<img src={logo} alt='' style={{ zoom: 0.07 }} />
+							<a href="/" className={cls.logo}>
+								<img src={logo} alt="" style={{ zoom: 0.07 }} />
 							</a>
 							<ul
 								className={classnames(cls.mainNav, {
 									[cls.active]: active
 								})}
-								id='js-menu'
+								id="js-menu"
 							>
 								{links.map((link, index: number) => (
 									<li key={index}>
@@ -58,21 +58,21 @@ const Landing = () => {
 							<SupportingText>
 								We create open-source solutions to the world's pressing issues.
 							</SupportingText>
-							<Button href='#about-us' role='button'>
+							<Button href="#about-us" role="button">
 								Learn More
 							</Button>
 						</div>
 						<div className={cls.imageHolder}>
 							<img
 								src={heroImage}
-								alt='Building the future'
+								alt="Building the future"
 								style={{ width: '100%', height: '100%' }}
 							/>
 						</div>
 					</animated.div>
 				</Hero>
 			</Section>
-			<Section backgroundColor='#000000' id='about-us'>
+			<Section backgroundColor="#000000" id="about-us">
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
 						<h2 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
@@ -95,7 +95,7 @@ const Landing = () => {
 					</div>
 				</div>
 			</Section>
-			<Section backgroundColor='#FFFFFF' id='projects'>
+			<Section backgroundColor="#FFFFFF" id="projects">
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
 						<h1
@@ -110,13 +110,16 @@ const Landing = () => {
 					<br />
 					<div style={{ width: '75%', margin: 'auto' }}>
 						<Project
-							logo={auxiliumLogo}
-							link='https://github.com/overthq/Auxilium'
+							name="Auxilium"
+							logo={auxiliumNewLogo}
+							link="https://github.com/overthq/Auxilium"
+							description="Emergency reporting app"
+							themeColor="#FF8282"
 						/>
 					</div>
 				</div>
 			</Section>
-			<Section backgroundColor='#000000' id='join-us'>
+			<Section backgroundColor="#000000" id="join-us">
 				<div style={{ ...styles.aboutUs, ...{ flexDirection: 'column' } }}>
 					<div>
 						<h2 style={{ ...styles.sectionHeader, ...{ textAlign: 'center' } }}>
@@ -146,9 +149,9 @@ const Landing = () => {
 							<div>
 								<Button
 									style={{ backgroundColor: '#FFFFFF', color: '#000000' }}
-									href='https://github.com/overthq'
-									target='_blank'
-									rel='noopener noreferrer'
+									href="https://github.com/overthq"
+									target="_blank"
+									rel="noopener noreferrer"
 								>
 									Join Us on GitHub
 								</Button>
@@ -159,20 +162,20 @@ const Landing = () => {
 			</Section>
 			<Footer>
 				<div>
-					<img src={logo} alt='' style={{ zoom: 0.07, filter: 'invert(1)' }} />
+					<img src={logo} alt="" style={{ zoom: 0.07, filter: 'invert(1)' }} />
 				</div>
 				<div>
 					<a
-						href='https://www.producthunt.com/posts/overt-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-overt-2'
-						target='_blank'
-						rel='noopener noreferrer'
+						href="https://www.producthunt.com/posts/overt-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-overt-2"
+						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<img
-							src='https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=149087&theme=light'
-							alt='Overt - Building the future in the open | Product Hunt Embed'
+							src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=149087&theme=light"
+							alt="Overt - Building the future in the open | Product Hunt Embed"
 							style={{ width: '250px', height: '54px' }}
-							width='250px'
-							height='54px'
+							width="250px"
+							height="54px"
 						/>
 					</a>
 				</div>
@@ -184,10 +187,10 @@ const Landing = () => {
 						justifyContent: 'space-between'
 					}}
 				>
-					<a href='https://github.com/overthq' className={cls.socialIcon}>
+					<a href="https://github.com/overthq" className={cls.socialIcon}>
 						<IoLogoGithub size={30} />
 					</a>
-					<a href='https://twitter.com/overt_hq' className={cls.socialIcon}>
+					<a href="https://twitter.com/overt_hq" className={cls.socialIcon}>
 						<IoLogoTwitter size={30} />
 					</a>
 				</div>
