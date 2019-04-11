@@ -9,7 +9,7 @@ import links from './links';
 import cls from './Landing.module.scss';
 import styles from './styles';
 import logo from '../../assets/images/overtlogo.svg';
-import auxiliumNewLogo from '../../assets/images/auxiliumNewLogo.png';
+import auxiliumLogo from '../../assets/images/auxiliumLogo.png';
 import heroImage from '../../assets/heroimage.svg';
 
 const Landing = () => {
@@ -108,10 +108,10 @@ const Landing = () => {
 						</h1>
 					</div>
 					<br />
-					<div style={{ width: '75%', margin: 'auto' }}>
+					<div style={{ width: '85%', margin: 'auto' }}>
 						<Project
 							name="Auxilium"
-							logo={auxiliumNewLogo}
+							logo={auxiliumLogo}
 							link="https://github.com/overthq/Auxilium"
 							description="Emergency reporting app"
 							themeColor="#FF8282"
