@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 import classnames from 'classnames';
 import { IoLogoGithub, IoLogoTwitter, IoIosMenu } from 'react-icons/io';
 
@@ -14,7 +14,12 @@ import heroImage from '../../assets/heroimage.svg';
 
 const Landing = () => {
 	const [active, setActive] = React.useState(false);
-	const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
+	const springProps = useSpring({
+		to: { opacity: 1, marginTop: 0, color: '#000000' },
+		from: { opacity: 0, marginTop: 250, color: '#D3D3D3' },
+		// Write good config.
+		config: config.molasses
+	});
 	return (
 		<>
 			<Section backgroundColor="#FFFFFF">
