@@ -93,7 +93,7 @@ const Landing = () => {
 						<p style={styles.sectionParagraph}>
 							At Overt, we are building open-source software to solve problems
 							we face everyday. We believe in the collaboration of developers
-							around the globe, to build the software that will shape tommorrow.
+							around the globe, to build the software that will shape tomorrow.
 							We are building software for the the people, by the people.
 						</p>
 					</div>
