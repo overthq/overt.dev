@@ -32,7 +32,7 @@ const Landing = () => {
 								<IoIosMenu color='#000000' size={30} />
 							</span>
 							<a href='/' className={cls.logo}>
-								<img src={logo} alt='' style={{ zoom: 0.07 }} />
+								<img src={logo} alt='' style={{ width: 100, height: 'auto' }} />
 							</a>
 							<ul
 								className={classnames(cls.mainNav, {
@@ -166,7 +166,11 @@ const Landing = () => {
 			</Section>
 			<Footer>
 				<div>
-					<img src={logo} alt='' style={{ zoom: 0.07, filter: 'invert(1)' }} />
+					<img
+						src={logo}
+						alt=''
+						style={{ width: 100, height: 'auto', filter: 'invert(1)' }}
+					/>
 				</div>
 				<div>
 					<a
