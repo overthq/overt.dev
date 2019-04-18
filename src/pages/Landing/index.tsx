@@ -169,7 +169,7 @@ const Landing = () => {
 					<img
 						src={logo}
 						alt=''
-						style={{ width: 100, height: 'auto', filter: 'invert(1)' }}
+						style={{ width: 90, height: 'auto', filter: 'invert(1)' }}
 					/>
 				</div>
 				<div>
