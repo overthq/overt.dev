@@ -16,4 +16,4 @@ MIT License
 
 ## Author
 
-Oluwakorede Fashokun <korede@overt.dev> for [Overt Technologies](https://overt.dev)
+Oluwakorede Fashokun <korede@overt.dev> for [Overt](https://overt.dev)
