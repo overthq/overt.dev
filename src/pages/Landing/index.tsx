@@ -187,7 +187,7 @@ const Landing = () => {
 						/>
 					</a>
 				</div>
-				<div className={cls.iconsContainer}>
+				<div style={styles.iconsContainer}>
 					<a href='https://github.com/overthq' className={cls.socialIcon}>
 						<IoLogoGithub size={30} />
 					</a>

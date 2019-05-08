@@ -25,6 +25,12 @@ const styles = {
 		fontWeight: 700,
 		color: '#FFFFFF',
 		fontSize: 40
+	},
+	iconsContainer: {
+		display: 'flex' as 'flex',
+		flexDirection: 'row' as 'row',
+		alignItems: 'center',
+		justifyContent: 'space-between'
 	}
 };
 

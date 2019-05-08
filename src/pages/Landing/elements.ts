@@ -53,8 +53,8 @@ export const Footer = styled.div`
 	}
 	& > *:last-child {
 		justify-content: space-around;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding-left: 12%;
+		padding-right: 12%;
 	}
 	@media screen and (max-width: 650px) {
 		flex-direction: column;
