@@ -1,6 +1,6 @@
 # Overt Website
 
-![Overt](./src/assets/images/overtlogo.svg)
+[![Overt](./src/assets/images/overtlogo.svg)](https://overt.dev)
 
 <p align="center">
 	<a href="https://app.netlify.com/sites/determined-fermat-96e0fe/deploys">
@@ -16,4 +16,4 @@ MIT License
 
 ## Author
 
-Oluwakorede Fashokun <korede@overt.dev> for [Overt Technologies](https://github.com/Overt-Tech)
+Oluwakorede Fashokun <korede@overt.dev> for [Overt Technologies](https://overt.dev)
