@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { darken } from 'polished';
 import { IoLogoGithub } from 'react-icons/io';
 
 const Wrapper = styled.div`
@@ -54,8 +55,10 @@ const Button: any = styled.a`
 	font-size: 1.2rem;
 	color: #ffffff;
 	background-color: ${({ backgroundColor }: any) => backgroundColor};
+	transition: background-color 0.5s ease-in-out;
 	&:hover {
-		opacity: 0.9;
+		background-color: ${({ backgroundColor }: any) =>
+			darken(0.02, backgroundColor)};
 		cursor: pointer;
 	}
 	& > *:first-child {
@@ -87,7 +90,7 @@ const Project = ({
 			<Half backgroundColor={themeColor}>
 				<Logo src={logo} alt={name} />
 			</Half>
-			<Half backgroundColor="#FFFFFF">
+			<Half backgroundColor='#FFFFFF'>
 				<h2>{name}</h2>
 				<p>{description}</p>
 				<Button href={link} backgroundColor={themeColor}>

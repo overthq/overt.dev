@@ -1,6 +1,5 @@
-
 const styles = {
-  sectionParagraph: {
+	sectionParagraph: {
 		fontSize: 20,
 		color: '#FFFFFF',
 		lineHeight: 1.5,
@@ -19,7 +18,8 @@ const styles = {
 		display: 'flex',
 		width: '100%',
 		justifyContent: 'space-between',
-		alignItems: 'center'
+		alignItems: 'center',
+		MozOsxFontSmoothing: 'subpixel-antialiased'
 	},
 	sectionHeader: {
 		fontWeight: 700,

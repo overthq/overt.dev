@@ -15,8 +15,8 @@ import heroImage from '../../assets/heroimage.svg';
 const Landing = () => {
 	const [active, setActive] = React.useState(false);
 	const springProps = useSpring({
-		to: { opacity: 1, marginTop: 0, color: '#000000' },
-		from: { opacity: 0, marginTop: 250, color: '#D3D3D3' },
+		from: { opacity: 0, transform: 'translate3d(0,100px,0)', color: '#D3D3D3' },
+		to: { opacity: 1, transform: 'translate3d(0,0,0)', color: '#000000' },
 		config: config.molasses
 	});
 	return (
