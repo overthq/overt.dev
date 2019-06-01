@@ -138,7 +138,7 @@ const Landing = () => {
 							in building the future.
 						</p>
 						<p style={styles.sectionParagraph}>
-							To re-assure you of our intentions, all our code is MIT-Licensed.
+							To re-assure you of our intentions, all our code is either MIT or GNU GPLv3-Licensed.
 							We also promise to not sell your intellectual property, or become
 							closed-source at any point.
 						</p>
