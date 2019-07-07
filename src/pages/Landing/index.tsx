@@ -153,11 +153,11 @@ const Landing = () => {
 							<div>
 								<Button
 									style={{ backgroundColor: '#FFFFFF', color: '#000000' }}
-									href='https://github.com/overthq'
+									href='https://join.slack.com/t/overt-hq/shared_invite/enQtNjg4ODQ0NzIwNjc5LTc4MDA3ZDMyNmE2MTc3ZTA1NThlNmZkMDgyYTIxNzNlMGI0N2IzYWY2OWYyNGQzMzdhYWQ0OTAyMmQxYjM2MjA'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
-									Join Us on GitHub
+									Join Us on Slack
 								</Button>
 							</div>
 						</div>
