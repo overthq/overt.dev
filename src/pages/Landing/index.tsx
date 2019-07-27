@@ -91,6 +91,12 @@ const Landing = () => {
 							open-source code makes technology accessible to everyone.
 						</p>
 						<p style={styles.sectionParagraph}>
+							Proprietary software stands in the way of the collaboration and
+							innovation that is undoubtedly required to solve humanity's
+							problems. We believe that the solving these problems is not a task
+							that can be done by a company.
+						</p>
+						<p style={styles.sectionParagraph}>
 							At Overt, we are building open-source software to solve problems
 							we face everyday. We believe in the collaboration of developers
 							around the globe, to build the software that will shape tomorrow.
@@ -138,9 +144,9 @@ const Landing = () => {
 							in building the future.
 						</p>
 						<p style={styles.sectionParagraph}>
-							To re-assure you of our intentions, all our code is either MIT or GNU GPLv3-Licensed.
-							We also promise to not sell your intellectual property, or become
-							closed-source at any point.
+							To re-assure you of our intentions, all our code is either MIT or
+							GNU GPLv3-Licensed. We also promise to not sell your intellectual
+							property, or become closed-source at any point.
 						</p>
 						<div
 							style={{

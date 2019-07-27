@@ -46,7 +46,7 @@ const Half: any = styled.div`
 	}
 `;
 
-const Button: any = styled.a`
+const Button = styled.a`
 	padding: 0.8rem 2rem;
 	display: flex;
 	align-items: center;
@@ -54,10 +54,10 @@ const Button: any = styled.a`
 	text-decoration: none;
 	font-size: 1.2rem;
 	color: #ffffff;
-	background-color: ${({ backgroundColor }: any) => backgroundColor};
+	background-color: ${({ backgroundColor }: { backgroundColor: string }) => backgroundColor};
 	transition: background-color 0.5s ease-in-out;
 	&:hover {
-		background-color: ${({ backgroundColor }: any) =>
+		background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
 			darken(0.02, backgroundColor)};
 		cursor: pointer;
 	}
