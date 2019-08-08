@@ -1,10 +1,16 @@
 import React from 'react';
 import './styles.css';
+import auxiliumLogo from '../../assets/images/auxiliumNewLogo.png';
 import auxiliumDemo from '../../assets/images/auxiliumDemo.png';
 
 const AuxiliumLanding = () => {
 	return (
 		<>
+			<nav className='landing-nav'>
+				<div className='landing-nav-container'>
+					<img src={auxiliumLogo} alt='Auxilium Logo' />
+				</div>
+			</nav>
 			<section className='hero'>
 				<div className='hero-container'>
 					<div className='hero-information'>
@@ -18,9 +24,19 @@ const AuxiliumLanding = () => {
 							the people involved. Auxilium helps you notify people or get
 							notified about emergencies in your vicinity.
 						</p>
-						<button className='hero-action-button'>Get early access</button>
+						<form className='hero-form' name='waitlist' method='POST' action='/' data-netlify='true'>
+							<input
+								className='hero-input'
+								type='text'
+								name='email'
+								placeholder='Your email address'
+							/>
+							<button className='hero-action-button' type='submit'>
+								Get early access
+							</button>
+						</form>
 					</div>
-					<div className='hero-information'>
+					<div className='hero-information' style={{ marginTop: -150 }}>
 						<img
 							alt='App demo'
 							src={auxiliumDemo}

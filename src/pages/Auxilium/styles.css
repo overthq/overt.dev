@@ -1,8 +1,18 @@
+.landing-nav {
+	height: 4.75rem;
+}
+
+.landing-nav-container {
+	width: 72rem;
+	max-width: 72rem;
+	padding: 0 1rem;
+	margin: auto;
+}
+
 .hero {
 	width: 100vw;
-	height: 60vh;
 	max-width: 72rem;
-	padding: 8rem 1rem;
+	padding: 8rem 1rem 0;
 	margin: 0 auto;
 	box-sizing: border-box;
 }
@@ -11,7 +21,6 @@
 	display: flex;
 	margin: 0;
 	padding: 0;
-	overflow-y: hidden;
 }
 
 .hero-information {
@@ -30,6 +39,26 @@
 	width: 90%;
 }
 
+.hero-form {
+	display: flex;
+	flex-direction: column;
+	height: 8rem;
+	width: 300px;
+}
+
+.hero-input {
+	padding: 1rem 1.5rem;
+	border: 0.5px solid #D3D3D3;
+	border-radius: 4px;
+	font-size: 1.125rem;
+	font-family: Karla;
+	text-align: center;
+}
+
+.hero-input:focus {
+	outline: none;
+}
+
 .hero-action-button {
 	padding: 1rem 1.5rem;
 	font-size: 1.125rem;
@@ -38,6 +67,7 @@
 	background-color: #ff8282;
 	border: none;
 	border-radius: 4px;
+	margin-top: 10px;
 	transition: background-color 0.25s ease;
 }
 
