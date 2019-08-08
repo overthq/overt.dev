@@ -1,0 +1,58 @@
+.hero {
+	width: 100vw;
+	height: 60vh;
+	max-width: 72rem;
+	padding: 8rem 1rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.hero-container {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+
+.hero-information {
+	width: 48%;
+}
+
+.hero-main-text {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.hero-supporting-text {
+	font-size: 1.125rem;
+	color: #777777;
+	margin-bottom: 2rem;
+	width: 90%;
+}
+
+.hero-action-button {
+	padding: 1rem 1.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #ff8282;
+	border: none;
+	border-radius: 4px;
+	transition: background-color 0.25s ease;
+}
+
+.hero-action-button:hover {
+	cursor: pointer;
+	background-color: #fa6b6b;
+}
+
+.hero-action-button:focus {
+	outline: none;
+}
+
+.hero-demo-image {
+	max-height: 700px;
+	object-fit: fill;
+	display: block;
+	margin: auto;
+}

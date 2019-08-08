@@ -1,6 +1,6 @@
 import React from 'react';
-import { Landing } from './pages';
+import AppRouter from './pages';
 
-const App = () => <Landing />;
+const App = () => <AppRouter />;
 
 export default App;
