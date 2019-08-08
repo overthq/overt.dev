@@ -24,7 +24,7 @@ const AuxiliumLanding = () => {
 							the people involved. Auxilium helps you notify people or get
 							notified about emergencies in your vicinity.
 						</p>
-						<form className='hero-form' name='waitlist' method='POST' action='/' data-netlify='true'>
+						<form className='hero-form' name='waitlist' method='POST' data-netlify='true'>
 							<input
 								className='hero-input'
 								type='text'
