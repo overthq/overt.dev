@@ -25,6 +25,7 @@ const AuxiliumLanding = () => {
 							notified about emergencies in your vicinity.
 						</p>
 						<form className='hero-form' name='waitlist' method='POST' data-netlify='true'>
+							<input type="hidden" name="form-name" value="waitlist" />
 							<input
 								className='hero-input'
 								type='text'
