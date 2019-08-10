@@ -45,8 +45,8 @@ const AuxiliumLanding = () => {
 						</h1>
 						<p className='hero-supporting-text'>
 							Awareness about an ongoing emergency is critical to survival of
-							the people involved. Auxilium helps you notify people or get
-							notified about emergencies in your vicinity.
+							those involved. Auxilium helps you notify people or get notified
+							about emergencies in your vicinity.
 						</p>
 						<form
 							className='hero-form'
