@@ -1,16 +1,20 @@
 import React from 'react';
+import Head from 'next/head';
 import { useSpring, animated, config } from 'react-spring';
 import classnames from 'classnames';
 import { IoLogoGithub, IoLogoTwitter, IoIosMenu } from 'react-icons/io';
 
-import { Button, Hero, Section, SupportingText, Footer } from './elements';
-import { Project } from './components';
-import links from './links';
-import cls from './Landing.module.scss';
-import styles from './styles';
-import logo from '../../assets/images/overtlogo.svg';
-import auxiliumLogo from '../../assets/images/auxiliumLogo.png';
-import heroImage from '../../assets/heroimage.svg';
+import {
+	Button,
+	Hero,
+	Section,
+	SupportingText,
+	Footer
+} from '../components/elements';
+import Project from '../components/Project';
+import links from '../components/links';
+import cls from '../styles/Landing.module.css';
+import styles from '../components/styles';
 
 const Landing = () => {
 	const [active, setActive] = React.useState(false);
@@ -21,6 +25,61 @@ const Landing = () => {
 	});
 	return (
 		<>
+			<Head>
+				<script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=UA-136875969-1'
+				/>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+							window.dataLayer = window.dataLayer || [];
+							function gtag() {
+								dataLayer.push(arguments);
+							}
+							gtag('js', new Date());
+							gtag('config', 'UA-136875969-1');
+						`
+					}}
+				/>
+				<meta charSet='utf-8' />
+				<link rel='shortcut icon' href='/static/favicon.ico' />
+				<link rel='canonical' href='https://overt.dev/' />
+				<link
+					href='https://fonts.googleapis.com/css?family=Karla:400,700'
+					rel='stylesheet'
+				/>
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1, shrink-to-fit=no'
+				/>
+				<meta name='theme-color' content='#000000' />
+				<meta name='robots' content='index, follow' />
+				<meta charSet='utf-8' />
+
+				<meta name='description' content='The future is open-source.' />
+				<meta name='image' content='https://overt.dev/logo.png' />
+
+				<meta itemProp='name' content='Overt' />
+				<meta itemProp='description' content='The future is open-source.' />
+				<meta itemProp='image' content='https://overt.dev/logo.png' />
+
+				<meta name='twitter:card' content='summary' />
+				<meta name='twitter:title' content='Overt' />
+				<meta name='twitter:description' content='The future is open-source.' />
+				<meta name='twitter:site' content='@overt_hq' />
+
+				<meta name='og:title' content='Overt' />
+				<meta name='og:description' content='The future is open-source.' />
+				<meta name='og:image' content='https://overt.dev/logo.png' />
+				<meta name='og:url' content='https://overt.dev' />
+				<meta name='og:site_name' content='Overt' />
+				<meta name='og:type' content='website' />
+
+				{/* <link rel='manifest' href='%PUBLIC_URL%/manifest.json' /> */}
+
+				<title>Overt</title>
+			</Head>
 			<Section backgroundColor='#FFFFFF'>
 				<Hero>
 					<div>
@@ -32,7 +91,11 @@ const Landing = () => {
 								<IoIosMenu color='#000000' size={30} />
 							</span>
 							<a href='/' className={cls.logo}>
-								<img src={logo} alt='' style={{ width: 100, height: 'auto' }} />
+								<img
+									src='/static/images/overtlogo.svg'
+									alt=''
+									style={{ width: 100, height: 'auto' }}
+								/>
 							</a>
 							<ul
 								className={classnames(cls.mainNav, {
@@ -68,7 +131,7 @@ const Landing = () => {
 						</div>
 						<div className={cls.imageHolder}>
 							<img
-								src={heroImage}
+								src='/static/heroimage.svg'
 								alt='Building the future'
 								style={{ width: '100%', height: '100%' }}
 							/>
@@ -121,7 +184,7 @@ const Landing = () => {
 					<div style={{ width: '85%', margin: 'auto' }}>
 						<Project
 							name='Auxilium'
-							logo={auxiliumLogo}
+							logo='/static/images/auxiliumLogo.png'
 							link='https://github.com/overthq/Auxilium'
 							description='Emergency reporting app'
 							themeColor='#FF8282'
@@ -173,7 +236,7 @@ const Landing = () => {
 			<Footer>
 				<div>
 					<img
-						src={logo}
+						src='/static/images/overtlogo.svg'
 						alt=''
 						style={{ width: 90, height: 'auto', filter: 'invert(1)' }}
 					/>

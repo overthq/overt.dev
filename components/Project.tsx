@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 import { IoLogoGithub } from 'react-icons/io';
 
@@ -54,7 +54,8 @@ const Button = styled.a`
 	text-decoration: none;
 	font-size: 1.2rem;
 	color: #ffffff;
-	background-color: ${({ backgroundColor }: { backgroundColor: string }) => backgroundColor};
+	background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
+		backgroundColor};
 	transition: background-color 0.5s ease-in-out;
 	&:hover {
 		background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
