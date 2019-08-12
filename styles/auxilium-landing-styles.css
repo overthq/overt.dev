@@ -1,8 +1,12 @@
-.landing-nav {
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+.landingNav {
 	height: 4.75rem;
 }
 
-.landing-nav-container {
+.landingNavContainer {
 	width: 72rem;
 	max-width: 72rem;
 	padding: 0 1rem;
@@ -17,49 +21,49 @@
 	box-sizing: border-box;
 }
 
-.hero-container {
+.heroContainer {
 	display: flex;
 	margin: 0;
 	padding: 0;
 }
 
-.hero-information {
+.heroInformation {
 	width: 48%;
 }
 
-.hero-main-text {
+.heroMainText {
 	font-size: 3rem;
 	margin-bottom: 1.5rem;
 }
 
-.hero-supporting-text {
+.heroSupportingText {
 	font-size: 1.125rem;
 	color: #777777;
 	margin-bottom: 2rem;
 	width: 90%;
 }
 
-.hero-form {
+.heroForm {
 	display: flex;
 	flex-direction: column;
 	height: 8rem;
 	width: 300px;
 }
 
-.hero-input {
+.heroInput {
 	padding: 1rem 1.5rem;
-	border: 0.5px solid #D3D3D3;
+	border: 0.5px solid #d3d3d3;
 	border-radius: 4px;
 	font-size: 1.125rem;
 	font-family: Karla;
 	text-align: center;
 }
 
-.hero-input:focus {
+.heroInput:focus {
 	outline: none;
 }
 
-.hero-action-button {
+.heroActionButton {
 	padding: 1rem 1.5rem;
 	font-size: 1.125rem;
 	font-weight: 700;
@@ -71,16 +75,16 @@
 	transition: background-color 0.25s ease;
 }
 
-.hero-action-button:hover {
+.heroActionButton:hover {
 	cursor: pointer;
 	background-color: #fa6b6b;
 }
 
-.hero-action-button:focus {
+.heroActionButton:focus {
 	outline: none;
 }
 
-.hero-demo-image {
+.heroDemoImage {
 	max-height: 700px;
 	object-fit: fill;
 	display: block;

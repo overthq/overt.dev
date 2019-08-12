@@ -1,3 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla';
+	-webkit-font-smoothing: antialiased;
+}
+
 nav {
 	font-size: 18px;
 	background-color: transparent;
@@ -13,10 +21,8 @@ nav {
 .navLinks {
 	text-decoration: none;
 	color: #505050;
-	font: {
-		size: 18px;
-		weight: 500;
-	}
+	font-size: 18px;
+	font-weight: 500;
 }
 
 .mainNav li {
@@ -38,12 +44,14 @@ nav {
 	cursor: pointer;
 	color: rgba(255, 255, 255, 0.8);
 	font-size: 24px;
-	&::before,
-	&::after {
-		content: '';
-	}
+
 	width: 30px;
 	height: 30px;
+}
+
+.navbarToggle::before,
+.navbarToggle::after {
+	content: '';
 }
 
 .active {
@@ -53,9 +61,10 @@ nav {
 .navLinks {
 	transition: opacity 400ms ease-in-out;
 	opacity: 0.75;
-	&:hover {
-		opacity: 1;
-	}
+}
+
+.navLinks:hover {
+	opacity: 1;
 }
 
 .hero {
@@ -117,20 +126,19 @@ canvas {
 	}
 }
 
-.fullscreen {
-	& > div {
-		height: 100%;
-		width: 100%;
-	}
+.fullscreen div {
+	height: 100%;
+	width: 100%;
 }
 
 .socialIcon {
 	color: #ffffff;
 	transition: color 0.5s ease-in-out;
-	&:visited {
-		color: #ffffff;
-	}
-	&:hover {
-		color: #d3d3d3;
-	}
+}
+
+.socialIcon:visited {
+	color: #ffffff;
+}
+.socialIcon:hover {
+	color: #d3d3d3;
 }

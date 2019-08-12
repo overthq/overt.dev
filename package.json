@@ -3,48 +3,32 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@zeit/next-css": "^1.0.1",
 		"classnames": "^2.2.6",
-		"node-sass": "^4.12.0",
+		"next": "^9.0.3",
+		"next-compose-plugins": "^2.2.0",
 		"polished": "^3.4.1",
-		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"react-helmet": "^5.2.1",
+		"react": "^16.9.0",
+		"react-dom": "^16.9.0",
 		"react-icons": "^3.7.0",
-		"react-router-dom": "^5.0.1",
-		"react-scripts": "3.0.1",
 		"react-spring": "^8.0.27",
 		"styled-components": "^4.3.2"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"storybook": "start-storybook -p 9001 -c .storybook",
-		"lint": "yarn prettier --write 'src/**/*.{ts,tsx,json}'"
+		"dev": "next",
+		"start": "next start",
+		"build": "next build",
+		"lint": "prettier --write 'src/**/*.{ts,tsx,json}'"
 	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": [
-		">0.2%",
-		"not dead",
-		"not ie <= 11",
-		"not op_mini all"
-	],
 	"devDependencies": {
-		"@storybook/addon-info": "^5.1.9",
-		"@storybook/addon-knobs": "^5.1.9",
-		"@storybook/react": "^5.1.9",
 		"@types/classnames": "^2.2.9",
 		"@types/jest": "^24.0.15",
+		"@types/node": "^12.7.1",
 		"@types/react": "^16.8.23",
 		"@types/react-dom": "^16.8.4",
-		"@types/react-helmet": "^5.0.9",
-		"@types/react-router-dom": "^4.3.4",
-		"@types/storybook__react": "^4.0.2",
 		"@types/styled-components": "^4.1.16",
 		"babel-jest": "^24.8.0",
+		"babel-plugin-styled-components": "^1.10.6",
 		"typescript": "^3.5.2"
 	}
 }
