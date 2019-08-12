@@ -8,6 +8,7 @@ const AuxiliumLanding = () => (
 			<title>Auxilium</title>
 			<meta name='title' content='Auxilium — Save lives. Report emergencies.' />
 			<meta name='description' content='Save lives. Report emergencies.' />
+			<link rel='shortcut icon' href='/static/auxilium-favicon.ico' />
 			<link
 				href='https://fonts.googleapis.com/css?family=Karla:400,700'
 				rel='stylesheet'
