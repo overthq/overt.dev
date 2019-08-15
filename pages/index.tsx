@@ -43,6 +43,7 @@ const Landing = () => {
 					}}
 				/>
 				<meta charSet='utf-8' />
+				<meta http-equiv="x-ua-compatible" content="ie=edge" />
 				<link rel='shortcut icon' href='/static/favicon.ico' />
 				<link rel='canonical' href='https://overt.dev/' />
 				<link
