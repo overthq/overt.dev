@@ -1,9 +1,4 @@
-interface LinkType {
-	url: string;
-	label: string;
-}
-
-const links: LinkType[] = [
+const links = [
 	{
 		url: 'https://github.com/overthq',
 		label: 'GitHub'

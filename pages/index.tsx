@@ -98,9 +98,7 @@ const Landing = () => {
 								/>
 							</a>
 							<ul
-								className={classnames(cls.mainNav, {
-									[cls.active]: active
-								})}
+								className={classnames(cls.mainNav, { [cls.active]: active })}
 								id='js-menu'
 							>
 								{links.map((link, index: number) => (
