@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useSpring, animated, config } from 'react-spring';
 import classnames from 'classnames';
 import { IoLogoGithub, IoLogoTwitter, IoIosMenu } from 'react-icons/io';
-
 import {
 	Button,
 	Hero,
@@ -76,8 +75,6 @@ const Landing = () => {
 				<meta name='og:site_name' content='Overt' />
 				<meta name='og:type' content='website' />
 
-				{/* <link rel='manifest' href='%PUBLIC_URL%/manifest.json' /> */}
-
 				<title>Overt</title>
 			</Head>
 			<Section backgroundColor='#FFFFFF'>
@@ -101,7 +98,7 @@ const Landing = () => {
 								className={classnames(cls.mainNav, { [cls.active]: active })}
 								id='js-menu'
 							>
-								{links.map((link, index: number) => (
+								{links.map((link, index) => (
 									<li key={index}>
 										<a href={link.url} className={cls.navLinks}>
 											{link.label}
