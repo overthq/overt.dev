@@ -40,6 +40,9 @@ const Half: any = styled.div`
 		font-size: 1.2rem;
 		color: #505050;
 	}
+	img {
+		width: 75%;
+	}
 	@media (max-width: 768px) {
 		height: 50%;
 		width: 100%;
@@ -67,10 +70,6 @@ const Button = styled.a`
 	}
 `;
 
-const Logo = styled.img`
-	width: 75%;
-`;
-
 interface IProjectProps {
 	name: string;
 	link: string;
@@ -85,22 +84,20 @@ const Project = ({
 	logo,
 	description,
 	themeColor
-}: IProjectProps) => {
-	return (
-		<Wrapper>
-			<Half backgroundColor={themeColor}>
-				<Logo src={logo} alt={name} />
-			</Half>
-			<Half backgroundColor='#FFFFFF'>
-				<h2>{name}</h2>
-				<p>{description}</p>
-				<Button href={link} backgroundColor={themeColor}>
-					<IoLogoGithub size={25} />
-					GitHub
-				</Button>
-			</Half>
-		</Wrapper>
-	);
-};
+}: IProjectProps) => (
+	<Wrapper>
+		<Half backgroundColor={themeColor}>
+			<img src={logo} alt={name} />
+		</Half>
+		<Half backgroundColor='#FFFFFF'>
+			<h2>{name}</h2>
+			<p>{description}</p>
+			<Button href={link} backgroundColor={themeColor}>
+				<IoLogoGithub size={25} />
+				GitHub
+			</Button>
+		</Half>
+	</Wrapper>
+);
 
 export default Project;
