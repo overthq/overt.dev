@@ -152,7 +152,7 @@ const Landing = () => {
 							Proprietary software stands in the way of the collaboration and
 							innovation that is undoubtedly required to solve humanity's
 							problems. We believe that the solving these problems is not a task
-							that can be done by a company.
+							that can be accomplished by a single entity.
 						</p>
 						<p style={styles.sectionParagraph}>
 							At Overt, we are building open-source software to solve problems
