@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { darken } from 'polished';
 import { IoLogoGithub } from 'react-icons/io';
 
@@ -20,14 +20,14 @@ const Wrapper = styled.div`
 	}
 `;
 
-const Half: any = styled.div`
+const Half = styled.div<{ backgroundColor: string; logo?: string }>`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	padding: 25px 5px;
 	align-items: center;
-	background-color: ${({ backgroundColor }: any) => backgroundColor};
-	background-image: ${({ logo }: { logo?: string }) => `url(${logo})`};
+	background-color: ${({ backgroundColor }) => backgroundColor};
+	background-image: ${({ logo }) => `url(${logo})`};
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
@@ -49,7 +49,7 @@ const Half: any = styled.div`
 	}
 `;
 
-const Button = styled.a`
+const Button = styled.a<{ backgroundColor: string }>`
 	padding: 0.8rem 2rem;
 	display: flex;
 	align-items: center;
@@ -57,12 +57,10 @@ const Button = styled.a`
 	text-decoration: none;
 	font-size: 1.2rem;
 	color: #ffffff;
-	background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
-		backgroundColor};
+	background-color: ${({ backgroundColor }) => backgroundColor};
 	transition: background-color 0.5s ease-in-out;
 	&:hover {
-		background-color: ${({ backgroundColor }: { backgroundColor: string }) =>
-			darken(0.02, backgroundColor)};
+		background-color: ${({ backgroundColor }) => darken(0.02, backgroundColor)};
 		cursor: pointer;
 	}
 	& > *:first-child {
