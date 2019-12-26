@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeaderWrapper = styled.section`
+const HeaderContainer = styled.header`
 	background-color: #000000;
 	padding: 0 20px;
 	display: flex;
@@ -22,23 +22,26 @@ const HeaderWrapper = styled.section`
 
 	button {
 		padding: 0.8rem 2rem;
-		border-radius: 4px;
 		background-color: #ffffff;
 		border: none;
-		margin: 1rem 0;
+		margin-top: 2rem;
 		font-size: 1rem;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 `;
 
 const Header = () => (
-	<HeaderWrapper>
+	<HeaderContainer>
 		<h1>Building the future. In the open.</h1>
 		<p>
 			The future is open-source. Overt is building solutions to the world's
 			pressing issues.
 		</p>
 		<button>Learn More</button>
-	</HeaderWrapper>
+	</HeaderContainer>
 );
 
 export default Header;
