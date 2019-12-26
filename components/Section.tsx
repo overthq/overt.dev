@@ -1,14 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const HeaderContainer = styled.header`
-	background-color: #000000;
+interface SectionProps {
+	backgroundColor?: string;
+	textColor?: string;
+}
+
+const SectionContainer = styled.section<SectionProps>(
+	props => `
+	background-color: ${props.backgroundColor || '#000000'};
 	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 60px 0;
-	color: #ffffff;
+	color: ${props.textColor || '#ffffff'};
 
 	h1 {
 		font-size: 3rem;
@@ -22,7 +28,8 @@ const HeaderContainer = styled.header`
 
 	button {
 		padding: 0.8rem 2rem;
-		background-color: #ffffff;
+		background-color: ${props.textColor || '#ffffff'};
+		color: ${props.backgroundColor || '#000000'};
 		border: none;
 		margin-top: 2rem;
 		font-size: 1rem;
@@ -31,17 +38,19 @@ const HeaderContainer = styled.header`
 			cursor: pointer;
 		}
 	}
-`;
+`
+);
 
-const Header = () => (
-	<HeaderContainer>
+const Section = () => (
+	<SectionContainer>
 		<h1>Building the future. In the open.</h1>
 		<p>
 			The future is open-source. Overt is building solutions to the world's
 			pressing issues.
 		</p>
 		<button>Learn More</button>
-	</HeaderContainer>
+	</SectionContainer>
 );
 
-export default Header;
+export default Section;
+
