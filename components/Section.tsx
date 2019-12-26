@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 interface SectionProps {
@@ -6,7 +5,7 @@ interface SectionProps {
 	textColor?: string;
 }
 
-const SectionContainer = styled.section<SectionProps>(
+const Section = styled.section<SectionProps>(
 	props => `
 	background-color: ${props.backgroundColor || '#000000'};
 	padding: 0 20px;
@@ -39,17 +38,6 @@ const SectionContainer = styled.section<SectionProps>(
 		}
 	}
 `
-);
-
-const Section = () => (
-	<SectionContainer>
-		<h1>Building the future. In the open.</h1>
-		<p>
-			The future is open-source. Overt is building solutions to the world's
-			pressing issues.
-		</p>
-		<button>Learn More</button>
-	</SectionContainer>
 );
 
 export default Section;
