@@ -14,11 +14,13 @@ const Home = () => (
 		</Section>
 		<Section backgroundColor='#FFFFFF' textColor='#000000'>
 			<h1>Join the community.</h1>
-			<p>
+			<p style={{ maxWidth: 750 }}>
 				Our Discord channel is home to a community of developers committed to
 				building the future of technology, and the world.
 			</p>
-			<button>Join our Discord</button>
+			<a href='https://discord.gg' target='_blank' rel='noopener noreferrer'>
+				<button>Join our Discord</button>
+			</a>
 		</Section>
 	</Layout>
 );
