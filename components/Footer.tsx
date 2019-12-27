@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const FooterWrapper = styled.footer`
+const FooterContainer = styled.footer`
 	background-color: #000000;
 	padding: 20px;
+	display: flex;
+	justify-content: space-around;
 `;
 
 const Logo = styled.img`
@@ -13,12 +15,12 @@ const Logo = styled.img`
 `;
 
 const Footer = () => (
-	<FooterWrapper>
+	<FooterContainer>
 		<div>
 			<Logo src='/static/images/overtlogo.svg' alt='Overt Logo' />
-			<p style={{ color: '#FFFFFF' }}>&copy; 2020</p>
+			<p style={{ color: '#FFFFFF', textAlign: 'center' }}>&copy; 2020</p>
 		</div>
-	</FooterWrapper>
+	</FooterContainer>
 );
 
 export default Footer;

@@ -12,7 +12,7 @@ const Section = styled.section<SectionProps>(
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 60px 0;
+	padding: 60px 20px;
 	color: ${props.textColor || '#ffffff'};
 
 	h1 {
@@ -23,6 +23,7 @@ const Section = styled.section<SectionProps>(
 
 	p {
 		font-size: 1.2rem;
+		text-align: center;
 	}
 
 	button {
@@ -31,10 +32,16 @@ const Section = styled.section<SectionProps>(
 		color: ${props.backgroundColor || '#000000'};
 		border: none;
 		margin-top: 2rem;
-		font-size: 1rem;
+		font-size: 1.2rem;
+		font-family: 'Courier Prime', monospace;
+		text-transform: uppercase;
+		border: 2px solid ${props.textColor || '#ffffff'};
+		transition: background-color 200ms linear;
 
 		&:hover {
 			cursor: pointer;
+			background-color: ${props.backgroundColor || '#000000'};
+			color: ${props.textColor || '#ffffff'};
 		}
 	}
 `
