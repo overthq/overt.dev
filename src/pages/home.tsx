@@ -16,7 +16,9 @@ const Home = () => (
 			<h1>Join the community.</h1>
 			<p style={{ maxWidth: 750 }}>
 				Our Discord channel is home to a community of developers committed to
-				building the future of technology, and the world.
+				building the future of technology, and the world. Become a part of this
+				great team, and contribute your ideas to the development of world-class
+				solutions.
 			</p>
 			<a href='https://discord.gg' target='_blank' rel='noopener noreferrer'>
 				<button>Join our Discord</button>

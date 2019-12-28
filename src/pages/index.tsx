@@ -23,6 +23,7 @@ const Landing = () => {
 		to: { opacity: 1, transform: 'translate3d(0,0,0)', color: '#000000' },
 		config: config.molasses
 	});
+
 	return (
 		<>
 			<Head>

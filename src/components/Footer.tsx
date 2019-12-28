@@ -18,13 +18,16 @@ const Logo = styled.img`
 
 const footerSections = [
 	{
-		title: 'Product'
+		title: 'Product',
+		options: []
 	},
 	{
-		title: ''
+		title: '',
+		options: []
 	},
 	{
-		title: ''
+		title: '',
+		options: []
 	}
 ];
 
