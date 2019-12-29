@@ -4,7 +4,7 @@ import { FaGithub, FaTwitter, FaDiscord } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
 	background-color: #000000;
-	padding: 100px 20px;
+	padding: 100px 60px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -18,16 +18,43 @@ const Logo = styled.img`
 
 const footerSections = [
 	{
-		title: 'Product',
-		options: []
+		title: 'Community',
+		options: [
+			{
+				link: 'https://discord.gg',
+				label: 'Discord'
+			},
+			{
+				link: 'https://twitter.com',
+				label: 'Twitter'
+			}
+		]
 	},
 	{
-		title: '',
-		options: []
+		title: 'Our Work',
+		options: [
+			{
+				link: 'https://github.com/overthq',
+				label: 'GitHub'
+			},
+			{
+				link: '/case-studies',
+				label: 'Case Studies'
+			}
+		]
 	},
 	{
-		title: '',
-		options: []
+		title: 'Support',
+		options: [
+			{
+				link: '/faq',
+				label: 'FAQ'
+			},
+			{
+				link: '/contact-us',
+				label: 'Contact Us'
+			}
+		]
 	}
 ];
 
@@ -76,16 +103,41 @@ const SocialLinks = () => (
 	</SocialLinksContainer>
 );
 
+const FooterSection = styled.div`
+	h4 {
+		font-size: 1.2rem;
+		font-family: Courier;
+		color: #ffffff;
+		margin-bottom: 0.5rem;
+	}
+
+	li {
+		margin-bottom: 2px;
+	}
+
+	a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+`;
+
 const Footer = () => (
 	<FooterContainer>
 		<div>
 			<Logo src='/static/images/overtlogo.svg' alt='Overt Logo' />
 			<p style={{ color: '#FFFFFF', textAlign: 'center' }}>&copy; 2020</p>
 		</div>
-		{footerSections.map(({ title }, index) => (
-			<div key={index}>
-				<h5 style={{ color: '#FFFFFF' }}>{title}</h5>
-			</div>
+		{footerSections.map(({ title, options }, index) => (
+			<FooterSection key={index}>
+				<h4 style={{ color: '#FFFFFF' }}>{title}</h4>
+				<ul style={{ listStyle: 'none' }}>
+					{options.map(({ link, label }) => (
+						<li key={label} style={{ color: '#FFFFFF', fontSize: 16 }}>
+							<a href={link}>{label}</a>
+						</li>
+					))}
+				</ul>
+			</FooterSection>
 		))}
 		<SocialLinks />
 	</FooterContainer>

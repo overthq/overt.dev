@@ -50,7 +50,8 @@ const Layout: React.FC = ({ children }) => (
 			p,
 			strong,
 			b,
-			button {
+			button,
+			ul {
 				font-family: 'Rubik', sans-serif;
 			}
 		`}</style>

@@ -24,6 +24,7 @@ const Section = styled.section<SectionProps>(
 	p {
 		font-size: 1.2rem;
 		text-align: center;
+		margin-bottom: 2rem;
 	}
 
 	button {
@@ -31,7 +32,6 @@ const Section = styled.section<SectionProps>(
 		background-color: ${props.textColor || '#ffffff'};
 		color: ${props.backgroundColor || '#000000'};
 		border: none;
-		margin-top: 2rem;
 		font-size: 1.2rem;
 		font-family: 'Courier Prime', monospace;
 		text-transform: uppercase;
