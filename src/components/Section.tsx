@@ -21,10 +21,17 @@ const Section = styled.section<SectionProps>(
 		text-align: center;
 	}
 
+	h2 {
+		font-size: 2.75rem;
+		margin: 1rem 0;
+		text-align: center;
+	}
+
 	p {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 		text-align: center;
 		margin-bottom: 2rem;
+		line-height: 2rem;
 	}
 
 	button {
@@ -47,5 +54,19 @@ const Section = styled.section<SectionProps>(
 `
 );
 
-export default Section;
+export const SplitSection = styled(Section)`
+	p {
+		max-width: 500px;
+		margin: 0 auto 2rem;
+	}
 
+	@media only screen and (min-width: 501px) {
+		flex-direction: row;
+		& > div {
+			padding: 0 60px;
+			flex: 1;
+		}
+	}
+`;
+
+export default Section;

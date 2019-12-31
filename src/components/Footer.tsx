@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaTwitter, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaDiscord, FaKeybase } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
 	background-color: #000000;
@@ -8,6 +8,14 @@ const FooterContainer = styled.footer`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		& > * {
+			margin-bottom: 2rem;
+		}
+	}
 `;
 
 const Logo = styled.img`
@@ -77,6 +85,10 @@ const links = [
 	{
 		icon: FaDiscord,
 		href: 'https://discord.gg'
+	},
+	{
+		icon: FaKeybase,
+		href: 'https://keybase.io'
 	}
 ];
 
@@ -104,6 +116,7 @@ const SocialLinks = () => (
 );
 
 const FooterSection = styled.div`
+	text-align: center;
 	h4 {
 		font-size: 1.2rem;
 		font-family: Courier;
