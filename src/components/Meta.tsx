@@ -2,22 +2,6 @@ import React from 'react';
 
 const Meta = () => (
 	<>
-		<script
-			async
-			src='https://www.googletagmanager.com/gtag/js?id=UA-136875969-1'
-		/>
-		<script
-			dangerouslySetInnerHTML={{
-				__html: `
-				 window.dataLayer = window.dataLayer || [];
-				 function gtag() {
-					 dataLayer.push(arguments);
-				 }
-				 gtag('js', new Date());
-				 gtag('config', 'UA-136875969-1');
-        `
-			}}
-		/>
 		<meta charSet='utf-8' />
 		<link rel='shortcut icon' href='/static/favicon.ico' />
 		<link rel='canonical' href='https://overt.dev/' />
