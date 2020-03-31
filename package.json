@@ -5,7 +5,7 @@
 	"dependencies": {
 		"@zeit/next-css": "^1.0.1",
 		"classnames": "^2.2.6",
-		"next": "^9.1.6",
+		"next": "^9.3.2",
 		"next-compose-plugins": "^2.2.0",
 		"polished": "^3.4.2",
 		"react": "^16.12.0",
