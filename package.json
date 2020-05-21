@@ -3,16 +3,9 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"@zeit/next-css": "^1.0.1",
-		"classnames": "^2.2.6",
 		"next": "^9.1.6",
-		"next-compose-plugins": "^2.2.0",
-		"polished": "^3.4.2",
 		"react": "^16.12.0",
-		"react-dom": "^16.12.0",
-		"react-icons": "^3.8.0",
-		"react-spring": "^8.0.27",
-		"styled-components": "^4.4.1"
+		"react-dom": "^16.12.0"
 	},
 	"scripts": {
 		"dev": "next",
@@ -23,14 +16,11 @@
 		"lint": "prettier --write 'src/**/*.{ts,tsx,json}'"
 	},
 	"devDependencies": {
-		"@types/classnames": "^2.2.9",
 		"@types/jest": "^24.0.25",
 		"@types/node": "^13.1.1",
 		"@types/react": "^16.9.17",
 		"@types/react-dom": "^16.9.4",
-		"@types/styled-components": "^4.4.1",
 		"babel-jest": "^24.9.0",
-		"babel-plugin-styled-components": "^1.10.6",
 		"typescript": "^3.7.4"
 	}
 }
