@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 
 const links = {
 	GitHub: 'https://github.com/overthq',
@@ -7,23 +8,37 @@ const links = {
 };
 
 const Home = () => (
-	<main
-		style={{
-			display: 'flex',
-			flexDirection: 'column',
-			justifyContent: 'center',
-			alignItems: 'center',
-			maxWidth: 700,
-			fontSize: 18,
-			fontFamily: 'Georgia',
-			margin: '0 auto',
-			color: '#2d2d2d',
-			lineHeight: '36px',
-			paddingLeft: 15,
-			paddingRight: 15,
-			marginTop: 30,
-		}}
-	>
+	<main>
+		<style jsx global>{`
+			main {
+				max-width: 700px;
+				width: 100%;
+				margin: 0 auto;
+				font-size: 18px;
+				font-family: Georgia;
+				color: #2d2d2d;
+				line-height: 36px;
+				padding: 0 15px;
+				overflow-y: scroll;
+			}
+
+			.links-container {
+				display: flex;
+				justify-content: center;
+				margin: 20px 0;
+			}
+
+			.link {
+				text-decoration: none;
+				border-bottom: 1px dotted #505050;
+				color: inherit;
+				line-height: 18px;
+				margin: 0 15px;
+			}
+		`}</style>
+		<Head>
+			<title>Overt | The future is open-source.</title>
+		</Head>
 		<p>
 			Open-source software powers a large amount of the world's technology. From
 			operating systems to self-driving car software, open-source code makes
@@ -41,24 +56,9 @@ const Home = () => (
 			to build the software that will shape tomorrow. We are building software
 			for the the people, by the people.
 		</p>
-		<div
-			style={{
-				display: 'grid',
-				gridTemplateColumns: `repeat(${Object.keys(links).length}, 1fr)`,
-				gridGap: '10px',
-			}}
-		>
+		<div className='links-container'>
 			{Object.entries(links).map(([name, link]) => (
-				<a
-					key={name}
-					style={{
-						textDecoration: 'none',
-						borderBottom: '1px dotted #505050',
-						color: 'inherit',
-						lineHeight: 1,
-					}}
-					href={link}
-				>
+				<a key={name} className='link' href={link}>
 					{name}
 				</a>
 			))}
