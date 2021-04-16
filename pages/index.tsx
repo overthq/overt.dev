@@ -58,9 +58,9 @@ const Home = () => (
 			software systems are testaments to this fact. In fact, hardly any code
 			would be tangible, without the solid foundation built by open-source
 			software, as virtually every mainstream programming language is
-			open-source. Building in the open provides access to contributions from
-			people from all over the world, who bring their different perspectives and
-			experiences to create powerful solutions to important problems.
+			open-source. Building in the open enables contributors from all over the
+			world to bring their different perspectives and experiences together, to
+			create powerful solutions to important problems.
 		</p>
 		<p>
 			Overt is a project that aims to create communities around building
