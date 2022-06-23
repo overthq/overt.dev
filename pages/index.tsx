@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const links = {
 	GitHub: 'https://github.com/overthq',
-	Discord: 'https://discord.gg/t6wVzUh',
+	// Discord: 'https://discord.gg/t6wVzUh',
 	Twitter: 'https://twitter.com/overt_hq',
 };
 
