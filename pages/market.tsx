@@ -2,37 +2,19 @@ import Head from 'next/head';
 
 const Market = () => {
 	return (
-		<main>
-			<style jsx global>{`
-				main {
-					max-width: 700px;
-					width: 100%;
-					margin: 0 auto;
-					font-size: 18px;
-					font-family: Georgia;
-					color: #2d2d2d;
-					line-height: 36px;
-					padding: 0 15px;
-					overflow-y: scroll;
-				}
-
-				.links-container {
-					display: flex;
-					justify-content: center;
-					margin: 20px 0;
-				}
-
-				a {
-					text-decoration: none;
-					border-bottom: 1px dotted #505050;
-					color: inherit;
-					line-height: 18px;
-				}
-
-				.link {
-					margin: 0 15px;
-				}
-			`}</style>
+		<main
+			style={{
+				maxWidth: 700,
+				width: '100%',
+				margin: '0 auto',
+				fontSize: 18,
+				fontFamily: 'Georgia',
+				color: '#2d2d2d',
+				lineHeight: '36px',
+				padding: '0 15px',
+				overflowY: 'scroll',
+			}}
+		>
 			<Head>
 				<title>Introducing Market</title>
 				<meta
@@ -70,7 +52,16 @@ const Market = () => {
 			<p>
 				We're currently preparing an alpha release that will feature a few
 				retail brands and ~100 shoppers. Sign up on the waitlist{' '}
-				<a href='https://forms.gle/k1VvGtaknnT6jSRU7' target='_blank'>
+				<a
+					style={{
+						textDecoration: 'none',
+						borderBottom: '1px dotted #505050',
+						color: 'inherit',
+						lineHeight: '18px',
+					}}
+					href='https://forms.gle/k1VvGtaknnT6jSRU7'
+					target='_blank'
+				>
 					here
 				</a>{' '}
 				to gain access.
