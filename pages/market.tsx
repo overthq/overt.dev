@@ -39,7 +39,10 @@ const Market = () => {
 					name='description'
 					content='Market is a new mobile e-commerce solution for Nigerians.'
 				/>
-				<meta name='og:image' content='static/introducing-market.jpeg' />
+				<meta
+					name='og:image'
+					content='https://overt.dev/static/introducing-market.jpeg'
+				/>
 				<meta name='og:image:type' content='image/jpeg' />
 				<meta property='og:image:width' content='1200' />
 				<meta property='og:image:height' content='630' />
