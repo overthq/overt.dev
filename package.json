@@ -12,8 +12,6 @@
 		"dev": "next",
 		"start": "next start",
 		"build": "next build",
-		"export": "next export",
-		"deploy": "yarn build && yarn export",
 		"lint": "prettier --write 'src/**/*.{ts,tsx,json}'"
 	},
 	"devDependencies": {
