@@ -32,7 +32,7 @@ const Market = () => {
 				/>
 				<meta
 					property='og:image'
-					content='https://blog.hubspot.com/hubfs/open-graph-tags.jpg#keepProtocol'
+					content='https://overt.dev/static/introducing-market.jpeg'
 				/>
 
 				<meta property='twitter:card' content='summary_large_image' />
@@ -44,7 +44,7 @@ const Market = () => {
 				/>
 				<meta
 					property='twitter:image'
-					content='https://blog.hubspot.com/hubfs/open-graph-tags.jpg#keepProtocol'
+					content='https://overt.dev/static/introducing-market.jpeg'
 				/>
 			</Head>
 			<p>
