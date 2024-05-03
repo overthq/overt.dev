@@ -21,13 +21,33 @@ const Market = () => {
 					name='description'
 					content='Market is a new mobile e-commerce solution for Nigerians.'
 				/>
+				<meta property='og:url' content='https://overt.dev/market' />
+				<meta property='og:type' content='website' />
+				<meta property='og:title' content='Introducing Market' />
 				<meta
-					name='og:image'
+					property='og:description'
+					content='Market is a new mobile e-commerce solution for Nigerians.'
+				/>
+				<meta
+					property='og:image'
 					content='https://overt.dev/static/introducing-market.jpeg'
 				/>
-				<meta name='og:image:type' content='image/jpeg' />
+				<meta property='og:image:type' content='image/jpeg' />
 				<meta property='og:image:width' content='1200' />
 				<meta property='og:image:height' content='630' />
+
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta property='twitter:domain' content='overt.dev' />
+				<meta property='twitter:url' content='https://overt.dev/market' />
+				<meta name='twitter:title' content='Introducing Market' />
+				<meta
+					name='twitter:description'
+					content='Market is a new mobile e-commerce solution for Nigerians.'
+				/>
+				<meta
+					name='twitter:image'
+					content='https://overt.dev/static/introducing-market.jpeg'
+				/>
 			</Head>
 			<p>
 				The online shopping experience in Nigeria today is much worse than it
