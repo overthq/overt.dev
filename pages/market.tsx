@@ -17,12 +17,14 @@ const Market = () => {
 		>
 			<Head>
 				<title>Introducing Market</title>
+				<meta name='title' content='Introducing Market' />
 				<meta
 					name='description'
 					content='Market is a new mobile e-commerce solution for Nigerians.'
 				/>
-				<meta property='og:url' content='https://overt.dev/market' />
+
 				<meta property='og:type' content='website' />
+				<meta property='og:url' content='https://overt.dev/market' />
 				<meta property='og:title' content='Introducing Market' />
 				<meta
 					property='og:description'
@@ -30,23 +32,19 @@ const Market = () => {
 				/>
 				<meta
 					property='og:image'
-					content='https://www.overt.dev/static/introducing-market.jpeg'
+					content='https://overt.dev/static/introducing-market.jpeg'
 				/>
-				<meta property='og:image:type' content='image/jpeg' />
-				<meta property='og:image:width' content='1200' />
-				<meta property='og:image:height' content='630' />
 
-				<meta name='twitter:card' content='summary_large_image' />
-				<meta
-					name='twitter:image'
-					content='https://www.overt.dev/static/introducing-market.jpeg'
-				/>
-				<meta name='twitter:title' content='Introducing Market' />
-				<meta property='twitter:domain' content='overt.dev' />
+				<meta property='twitter:card' content='summary_large_image' />
 				<meta property='twitter:url' content='https://overt.dev/market' />
+				<meta property='twitter:title' content='Introducing Market' />
 				<meta
-					name='twitter:description'
+					property='twitter:description'
 					content='Market is a new mobile e-commerce solution for Nigerians.'
+				/>
+				<meta
+					property='twitter:image'
+					content='https://overt.dev/static/introducing-market.jpeg'
 				/>
 			</Head>
 			<p>
